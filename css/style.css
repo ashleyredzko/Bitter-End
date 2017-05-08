@@ -195,16 +195,14 @@ html, body {
 	height: 32px;
 	display: block;
 	border: 0;
-	/*font-weight: bold;*/
 	font-size: 0.97rem;
 	outline: none;
 	margin-bottom: 3px;
-	transition: 0.15s;
+	transition: 0.22s;
 }
 
 .side-progression button:hover {
-	opacity: 0.92;
-	border: 1px solid #111;
+	opacity: 0.75;
 }
 
 .side-progression button span {
