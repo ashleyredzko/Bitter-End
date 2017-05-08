@@ -6,8 +6,7 @@ html, body {
 
 .be-head {
 	background: #222;
-	margin: 0 auto;
-	padding: 2em 1em;
+	padding: 2rem 1rem;
 	text-align: center;
 }
 
@@ -15,7 +14,7 @@ html, body {
 	color: #e4e4e4 !important;
 	text-decoration: none !important;
 	font: 1.25em Raleway;
-	margin: 0px 0.25em;
+	margin: 0px 0.25rem;
 	padding: 10px 10px;
 	position: relative;
 	z-index: 0;
@@ -27,9 +26,9 @@ html, body {
 	background-size: cover;
 	display: block;
 	margin: auto;
-	width: 8.5em;
-	height: 8.5em;
-	margin-bottom: 2.2em;
+	width: 8.5rem;
+	height: 8.5rem;
+	margin-bottom: 2.2rem;
 }
 
 .navHov a:before {
@@ -45,4 +44,28 @@ html, body {
 }
 .navHov a:hover:before {
 	height: 100%;
+}
+
+@media (max-width: 576px) {
+	.be-head .navHov {
+		overflow: hidden;
+	}
+
+	.be-head .navHov a {
+		display: block;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+	}
+
+	.be-head .navHov .mainNav {
+		background-color: #333;
+		max-height: 0;
+		-webkit-transition: all 1s;
+		transition: all 1s;
+	}
+	
+	.be-head .navHov.toggled .mainNav {
+		max-height: 300px;
+	}
 }
