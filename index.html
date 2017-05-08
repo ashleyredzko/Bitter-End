@@ -112,20 +112,109 @@
 
 						<button data-toggle="collapse" data-target="#prog-nh" class="prog-nh-btn"><span>The Nighthold</span></button>
 
-							<div id="prog-nh" class="collapse">
-								TEST NIGHTHOLD PROGRESSION
+							<div id="prog-nh" class="collapse in">
+								<div class="prog-col-content">
+									<table class="prog-table">
+										<tr>
+											<td>Skorpyron</td>
+											<td class="pull-right kill-status">Mythic</td>
+										</tr>
+										<tr>
+											<td>Chronomatic Anomaly</td>
+											<td class="pull-right kill-status">Mythic</td>
+										</tr>
+										<tr>
+											<td>Trilliax</td>
+											<td class="pull-right kill-status">Mythic</td>
+										</tr>
+										<tr>
+											<td>Spellblade Aluriel</td>
+											<td class="pull-right kill-status">Mythic</td>
+										</tr>
+										<tr>
+											<td>Tichondrius</td>
+											<td class="pull-right kill-status">Mythic</td>
+										</tr>
+										<tr>
+											<td>Krosus</td>
+											<td class="pull-right kill-status">Mythic</td>
+										</tr>
+										<tr>
+											<td>High Botanist Tel'arn</td>
+											<td class="pull-right kill-status">Mythic</td>
+										</tr>
+										<tr>
+											<td>Star Augur Etraeus</td>
+											<td class="pull-right kill-status">Mythic</td>
+										</tr>
+										<tr>
+											<td>Grand Magistrix Elidande</td>
+											<td class="pull-right kill-status">Heroic</td>
+										</tr>
+										<tr>
+											<td>Gul'dan</td>
+											<td class="pull-right kill-status">Heroic</td>
+										</tr>
+									</table>
+								</div>
 							</div>
 
 						<button data-toggle="collapse" data-target="#prog-tov" class="prog-tov-btn"><span>Trial of Valor</span></button>
 
 							<div id="prog-tov" class="collapse">
-								TEST TOV PROGRESSION
+								<div class="prog-col-content">
+									<table class="prog-table">
+										<tr>
+											<td>Odyn</td>
+											<td class="pull-right kill-status">Mythic</td>
+										</tr>
+										<tr>
+											<td>Guarm</td>
+											<td class="pull-right kill-status">Mythic</td>
+										</tr>
+										<tr>
+											<td>Helya</td>
+											<td class="pull-right kill-status">Heroic</td>
+										</tr>
+									</table>
+								</div>
 							</div>
 
 						<button data-toggle="collapse" data-target="#prog-en" class="prog-en-btn"><span>Emerald Nightmare</span></button>
 
 							<div id="prog-en" class="collapse">
-								TEST EN PROGRESSION
+								<div class="prog-col-content">
+									<table class="prog-table">
+										<tr>
+											<td>Nythendra</td>
+											<td class="pull-right kill-status">Mythic</td>
+										</tr>
+										<tr>
+											<td>Il'gynoth, Heart of Corruption</td>
+											<td class="pull-right kill-status">Mythic</td>
+										</tr>
+										<tr>
+											<td>Elerethe Renferal</td>
+											<td class="pull-right kill-status">Mythic</td>
+										</tr>
+										<tr>
+											<td>Ursoc</td>
+											<td class="pull-right kill-status">Mythic</td>
+										</tr>
+										<tr>
+											<td>Dragons of Nightmare</td>
+											<td class="pull-right kill-status">Mythic</td>
+										</tr>
+										<tr>
+											<td>Cenarius</td>
+											<td class="pull-right kill-status">Mythic</td
+										></tr>
+										<tr>
+											<td>Xavius</td>
+											<td class="pull-right kill-status">Mythic</td>
+										</tr>
+									</table>
+								</div>
 							</div>
 						
 					</div>
@@ -146,5 +235,10 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 		<script src="js/main.js"></script>
+		<script>
+			$('td:contains("Mythic")').addClass('kill-mythic');
+			$('td:contains("Heroic")').addClass('kill-heroic');
+			$('td:contains("Normal")').addClass('kill-normal');
+		</script>
 	</body>
 </html>

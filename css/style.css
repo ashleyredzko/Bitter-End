@@ -102,7 +102,7 @@ html, body {
 	padding:10px;
 	width: 100%;
 	position: relative;
-	top: 150px;
+	top: 151px;
 	background: -moz-linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 98%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 98%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -192,14 +192,24 @@ html, body {
 
 .side-progression button {
 	width: 100%;
-	height: 28px;
+	height: 32px;
 	display: block;
 	border: 0;
+	/*font-weight: bold;*/
+	font-size: 0.97rem;
+	outline: none;
+	margin-bottom: 3px;
+	transition: 0.15s;
+}
+
+.side-progression button:hover {
+	opacity: 0.92;
+	border: 1px solid #111;
 }
 
 .side-progression button span {
 	color: #e4e4e4;
-	text-shadow: 2px 2px 1px black;
+	text-shadow: 2px 2px 2px black;
 }
 
 .prog-nh-btn {
@@ -215,4 +225,28 @@ html, body {
 .prog-en-btn {
 	background-image:url('../img/en.jpg');
 	background-size: cover;
+}
+
+.prog-col-content {
+	padding: 8px;
+}
+
+.prog-table {
+	width: 100%;
+}
+
+.kill-status {
+	font-size: 0.65rem;
+}
+
+.kill-mythic {
+	color: #DB4B4B;
+}
+
+.kill-heroic {
+	color: #F09E4D;
+}
+
+.kill-normal {
+	color: #F0CA4D;
 }
