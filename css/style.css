@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway';
+@import 'wow-styling.css';
 
 html, body {
 	font-family: Raleway;
@@ -68,4 +69,100 @@ html, body {
 	.be-head .navHov.toggled .mainNav {
 		max-height: 300px;
 	}
+}
+
+@media all and (max-width: 775px) {
+  div.highlight-panel {
+     display: none;
+  }
+}
+
+.highlight-panel {
+	padding: 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 1px solid #222;
+	height: 240px;
+	/*-webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);*/
+
+}
+
+.highlight-img {
+	background-size: cover;
+	background-image: url("../img/highlight.jpg");
+	background-repeat: no-repeat;
+	background-position: 0px -110px;
+	filter: hue-rotate(285deg);
+
+}
+
+.highlight-wrap {
+	padding:10px;
+	width: 100%;
+	position: relative;
+	top: 150px;
+	background: -moz-linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 98%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 98%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	text-shadow: 2px 2px 1px #000;
+
+}
+
+.highlight-title {
+	color: #e4e4e4;
+	font-size: 1.8em;
+
+}
+
+.highlight-desc {
+	color: #e4e4e4;
+
+}
+
+.be-sidebar {
+	color: #e4e4e4;
+	height: 500px;
+	background-color: #222;
+	padding: 10px;
+	margin: 0;
+}
+
+.be-news {
+	padding: 10px;
+	height: 500px;
+}
+
+.sidebar-section {
+	font-size: 1em;
+
+}
+
+.news-title {
+	color: #222;
+	font-size: 1.75em;
+}
+
+.news-author-info {
+	color: #222;
+	margin-top: -15px;
+	border-bottom: 1px solid #222;
+}
+
+.news-author {
+
+}
+
+.news-date {
+	font-size: 0.85em;
+}
+
+.news-time {
+	font-size: 0.85em;
+}
+
+.news-content {
+	margin-top: 15px;
+	color: #222;
 }
