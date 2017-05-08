@@ -1,0 +1,149 @@
+/*COLOURS*/
+
+.class-dk {
+	color: #C41F3B;
+}
+
+.class-dh {
+	color: #A330C9;
+}
+
+.class-druid {
+	color: #FF7D0A;
+}
+
+.class-hunter {
+	color: #ABD473;
+}
+
+.class-mage {
+	color: #69CCF0;
+}
+
+.class-monk {
+	color: #00FF96;
+}
+
+.class-paladin {
+	color: #F58CBA;
+}
+
+.class-priest {
+	color: #FFFFFF;
+}
+
+.class-rogue {
+	color: #FFF569;
+}
+
+.class-shaman {
+	color: #0070DE;
+}
+
+.class-warlock {
+	color: #9482C9;
+}
+
+.class-warrior {
+	color: #C79C6E;
+}
+
+/*BACKGROUND COLOURS*/
+
+.class-dk-bg {
+	background-color: #C41F3B;
+}
+
+.class-dh-bg {
+	background-color: #A330C9;
+}
+
+.class-druid-bg {
+	background-color: #FF7D0A;
+}
+
+.class-hunter-bg {
+	background-color: #ABD473;
+}
+
+.class-mage-bg {
+	background-color: #69CCF0;
+}
+
+.class-monk-bg {
+	background-color: #00FF96;
+}
+
+.class-paladin-bg {
+	background-color: #F58CBA;
+}
+
+.class-priest-bg {
+	background-color: #FFFFFF;
+}
+
+.class-rogue-bg {
+	background-color: #FFF569;
+}
+
+.class-shaman-bg {
+	background-color: #0070DE;
+}
+
+.class-warlock-bg {
+	background-color: #9482C9;
+}
+
+.class-warrior-bg {
+	background-color: #C79C6E;
+}
+
+/*BACKGROUND IMAGES*/
+
+.class-dk-img {
+	background-image: url("../img/class_icons/class-dk.jpg");
+}
+
+.class-dh-img {
+	background-image: url("../img/class_icons/class-dh.jpg");
+}
+
+.class-druid-img {
+	background-image: url("../img/class_icons/class-druid.jpg");
+}
+
+.class-hunter-img {
+	background-image: url("../img/class_icons/class-hunter.jpg");
+}
+
+.class-mage-img {
+	background-image: url("../img/class_icons/class-mage.jpg");
+}
+
+.class-monk-img {
+	background-image: url("../img/class_icons/class-monk.jpg");
+}
+
+.class-paladin-img {
+	background-image: url("../img/class_icons/class-paladin.jpg");
+}
+
+.class-priest-img {
+	background-image: url("../img/class_icons/class-priest.jpg");
+}
+
+.class-rogue-img {
+	background-image: url("../img/class_icons/class-rogue.jpg");
+}
+
+.class-shaman-img {
+	background-image: url("../img/class_icons/class-shaman.jpg");
+}
+
+.class-warlock-img {
+	background-image: url("../img/class_icons/class-warlock.jpg");
+}
+
+.class-warrior-img {
+	background-image: url("../img/class_icons/class-warrior.jpg");
+}
