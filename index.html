@@ -9,6 +9,12 @@
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	    <link rel="stylesheet" href="css/style.css">
 
+	    <style>
+	    	tr:nth-of-type(odd) {
+				background-color:#272727;
+	    	}
+		</style>
+
 		<title>Bitter End | Illidan US</title>
 	</head>
 	<body>
@@ -45,50 +51,82 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 be-sidebar">
-					<p class="sidebar-section"><span class="glyphicon glyphicon-user"></span> RECRUITMENT</p>
+					<p class="sidebar-section"></span>Recruitment</p>
 					<button type="button" class="btn btn-success btn-sm btn-block">Apply</button>
 					<div class="side-recruitment">
-						<div class="status-dk">
-							<div class="class-dk-img rec-img"></div><p class="class-dk">Death Knight</p>
-						</div>
-						<div class="status-dh"
-							><div class="class-dh-img rec-img"></div><p class="class-dh">Demon Hunter</p>
-						</div>
-						<div class="status-druid">
-							<div class="class-druid-img rec-img"></div><p class="class-druid">Druid</p>
-						</div>
-						<div class="status-hunter">
-							<div class="class-hunter-img rec-img"></div><p class="class-hunter">Hunter</p>
-						</div>
-						<div class="status-mage">
-							<div class="class-mage-img rec-img"></div><p class="class-mage">Mage</p>
-						</div>
-						<div class="status-monk">
-							<div class="class-monk-img rec-img"></div><p class="class-monk">Monk</p>
-						</div>
-						<div class="status-paladin">
-							<div class="class-paladin-img rec-img"></div><p class="class-paladin">Paladin</p>
-						</div>
-						<div class="status-priest">
-							<div class="class-priest-img rec-img"></div><p class="class-priest">Priest</p>
-						</div>
-						<div class="status-rogue">
-							<div class="class-rogue-img rec-img"></div><p class="class-rogue">Rogue</p>
-						</div>
-						<div class="status-shaman">
-							<div class="class-shaman-img rec-img"></div><p class="class-shaman">Shaman</p>
-						</div>
-						<div class="status-warlock">
-							<div class="class-warlock-img rec-img"></div><p class="class-warlock">Warlock</p>
-						</div>
-						<div class="status-warrior">
-							<div class="class-warrior-img rec-img"></div><p class="class-warrior">Warrior</p>
-						</div>
+						<table class="recruit-table">
+							<tr class="status-dk">
+								<td class="class-dk"><img src="img/class_icons/class-dk.jpg" />Death Knight</td>
+								<td class="rec-need-dk pull-right"></td>
+							</tr>
+							<tr class="status-dh">
+								<td class="class-dh"><img src="img/class_icons/class-dh.jpg" />Demon Hunter</td>
+								<td class="rec-need-dh pull-right"></td>
+							</tr>
+							<tr class="status-druid">
+								<td class="class-druid"><img src="img/class_icons/class-druid.jpg" />Druid</td>
+								<td class="rec-need-druid pull-right">Balance</td>
+							</tr>
+							<tr class="status-hunter">
+								<td class="class-hunter"><img src="img/class_icons/class-hunter.jpg" />Hunter</td>
+								<td class="rec-need-hunter pull-right">Any</td>
+							</tr>
+							<tr class="status-mage">
+								<td class="class-mage"><img src="img/class_icons/class-mage.jpg" />Mage</td>
+								<td class="rec-need-mage pull-right">Any</td>
+							</tr>
+							<tr class="status-monk">
+								<td class="class-monk"><img src="img/class_icons/class-monk.jpg" />Monk</td>
+								<td class="rec-need-monk pull-right"></td>
+							</tr>
+							<tr class="status-paladin">
+								<td class="class-paladin"><img src="img/class_icons/class-Paladin.jpg" />Paladin</td>
+								<td class="rec-need-paladin pull-right"></td>
+							</tr>
+							<tr class="status-priest">
+								<td class="class-priest"><img src="img/class_icons/class-priest.jpg" />Priest</td>
+								<td class="rec-need-priest pull-right">Shadow</td>
+							</tr>
+							<tr class="status-rogue">
+								<td class="class-rogue"><img src="img/class_icons/class-rogue.jpg" />Rogue</td>
+								<td class="rec-need-rogue pull-right"></td>
+							</tr>
+							<tr class="status-shaman">
+								<td class="class-shaman"><img src="img/class_icons/class-shaman.jpg" />Shaman</td>
+								<td class="rec-need-shaman pull-right">Elemental</td>
+							</tr>
+							<tr class="status-warlock">
+								<td class="class-warlock"><img src="img/class_icons/class-warlock.jpg" />Warlock</td>
+								<td class="rec-need-warlock pull-right">Any</td>
+							</tr>
+							<tr class="status-warrior">
+								<td class="class-warrior"><img src="img/class_icons/class-warrior.jpg" />Warrior</td>
+								<td class="rec-need-warrior pull-right">Fury</td>
+							</tr>
+						</table>
 					</div>
-					<p class="sidebar-section"><span class="glyphicon glyphicon-stats"></span> PROGRESSION</p>
+					<p class="sidebar-section"></span>Progression</p>
 					<button type="button" class="btn btn-primary btn-sm btn-block">WoW-Progress</button>
 					<button type="button" class="btn btn-info btn-sm btn-block">Warcraft Logs</button>
 					<div class="side-progression">
+
+						<button data-toggle="collapse" data-target="#prog-nh" class="prog-nh-btn"><span>The Nighthold</span></button>
+
+							<div id="prog-nh" class="collapse">
+								TEST NIGHTHOLD PROGRESSION
+							</div>
+
+						<button data-toggle="collapse" data-target="#prog-tov" class="prog-tov-btn"><span>Trial of Valor</span></button>
+
+							<div id="prog-tov" class="collapse">
+								TEST TOV PROGRESSION
+							</div>
+
+						<button data-toggle="collapse" data-target="#prog-en" class="prog-en-btn"><span>Emerald Nightmare</span></button>
+
+							<div id="prog-en" class="collapse">
+								TEST EN PROGRESSION
+							</div>
 						
 					</div>
 				</div>

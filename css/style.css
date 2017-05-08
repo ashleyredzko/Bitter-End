@@ -170,21 +170,49 @@ html, body {
 .side-recruitment {
 	padding: 10px 2px 10px 2px;
 	margin-top: 15px;
+	font-size: 0.8rem;
 }
 
 .side-progression {
 	padding: 10px 2px 10px 2px;
 	margin-top: 15px;
+	font-size: 0.8rem;
 }
 
-.rec-img {
-	height: 22px;
-	width: 22px;
-	background-size: cover;
-	float: left;
+.recruit-table {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.recruit-table img {
+	height: 20px;
+	width: 20px;
 	margin-right: 3px;
 }
 
-.rec-active {
-	float: right;
+.side-progression button {
+	width: 100%;
+	height: 28px;
+	display: block;
+	border: 0;
+}
+
+.side-progression button span {
+	color: #e4e4e4;
+	text-shadow: 2px 2px 1px black;
+}
+
+.prog-nh-btn {
+	background-image:url('../img/nighthold.jpg');
+	background-size: cover;
+}
+
+.prog-tov-btn {
+	background-image:url('../img/tov.jpg');
+	background-size: cover;
+}
+
+.prog-en-btn {
+	background-image:url('../img/en.jpg');
+	background-size: cover;
 }
