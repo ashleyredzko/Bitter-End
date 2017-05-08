@@ -61,8 +61,8 @@ html, body {
 	.be-head .navHov .mainNav {
 		background-color: #333;
 		max-height: 0;
-		-webkit-transition: all 1s;
-		transition: all 1s;
+		-webkit-transition: max-height 1s;
+		transition: max-height 1s;
 	}
 	
 	.be-head .navHov.toggled .mainNav {
