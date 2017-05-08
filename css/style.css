@@ -1,0 +1,48 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+html, body {
+	font-family: Raleway;
+}
+
+.be-head {
+	background: #222;
+	margin: 0 auto;
+	padding: 2em 1em;
+	text-align: center;
+}
+
+.be-head a {
+	color: #e4e4e4 !important;
+	text-decoration: none !important;
+	font: 1.25em Raleway;
+	margin: 0px 0.25em;
+	padding: 10px 10px;
+	position: relative;
+	z-index: 0;
+	cursor: pointer;
+}
+
+.be-logo {
+	background-image:url('../img/logo-white-nbg.png');
+	background-size: cover;
+	display: block;
+	margin: auto;
+	width: 8.5em;
+	height: 8.5em;
+	margin-bottom: 2.2em;
+}
+
+.navHov a:before {
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	left: 0px;
+	bottom: 0px;
+	content: '';
+	background: #00ffd0;
+	opacity: 0.25;
+	transition: all 0.3s;
+}
+.navHov a:hover:before {
+	height: 100%;
+}
