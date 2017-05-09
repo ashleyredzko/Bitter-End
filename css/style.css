@@ -18,7 +18,6 @@ html, body {
 	margin: 0px 0.25rem;
 	padding: 10px 10px;
 	position: relative;
-	z-index: 0;
 	cursor: pointer;
 }
 
@@ -71,7 +70,7 @@ html, body {
 	}
 }
 
-@media all and (max-width: 775px) {
+@media all and (max-width: 768px) {
   div.highlight-panel {
      display: none;
   }
@@ -248,3 +247,18 @@ html, body {
 .kill-normal {
 	color: #F0CA4D;
 }
+
+.raid-sched {
+	background: #222;
+	color: #e4e4e4;
+	min-width: 300px;
+	font-size: 0.75rem;
+	padding: 10px 25px;
+	border: 2px solid #222;
+	margin-bottom: 22px;
+}
+
+@media (max-width: 576px) {
+	.raid-sched {
+		width:100%;
+	}
