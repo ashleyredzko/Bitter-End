@@ -21,9 +21,9 @@
 	require('sidebar.php');
 ?>
 		<div class="col-md-9 be-news">
-		<p class="news-title">Application form coming soon!</p>
+		<p class="news-title">Bitter End Application Form</p>
 		<div class="news-content">
-			<p>Coming soon.</p>
+			<p>Literally fuck writing forms</p>
 		</div>
 		</div>
 	</div>
