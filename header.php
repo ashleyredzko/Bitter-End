@@ -11,7 +11,7 @@
 
 	    <style>
 	    	tr:nth-of-type(odd) {
-				background-color:#272727;
+				background-color:rgba(0,0,0,0.07);
 	    	}
 		</style>
 

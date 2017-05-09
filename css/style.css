@@ -254,12 +254,11 @@ button a {
 }
 
 .raid-sched {
-	background: #222;
-	color: #e4e4e4;
+	background: white;
+	color: #222;
 	min-width: 300px;
 	font-size: 0.8rem;
 	padding: 10px 25px;
-	border: 2px solid #222;
 	margin-bottom: 22px;
 }
 
@@ -267,3 +266,5 @@ button a {
 	.raid-sched {
 		width:100%;
 	}
+}
+

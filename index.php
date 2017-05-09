@@ -22,7 +22,7 @@
 ?>
 		<div class="col-md-9 be-news">
 		<p class="news-title">Star Augur Etraeus down!</p>
-		<p class="news-author-info">Posted by: <span class="news-author">Pantheon</span> <span class="news-date"><span class="glyphicon glyphicon-time"></span> 8th May 2017</span>, <span class="news-time">05:19am</span></p>
+		<p class="news-author-info">Posted by: <span class="news-author">Pantheon</span> <span class="news-date"><i class="fa fa-clock-o" aria-hidden="true"></i> 8th May 2017</span>, <span class="news-time">05:19am</span></p>
 		<div class="news-content">
 			<p>Spicy jalapeno ham hock burgdoggen pork chop, short loin swine bacon jerky pig capicola sirloin pork loin. Landjaeger burgdoggen sausage, kevin tongue strip steak ham hock. Andouille pig sausage pork belly kevin swine filet mignon, alcatra brisket leberkas strip steak pastrami rump pork chop. Prosciutto shank leberkas strip steak picanha short loin ham shoulder salami beef pork belly frankfurter pastrami ball tip shankle.</p>
 			<p>Picanha frankfurter sirloin drumstick, pork ground round landjaeger. Ham hock shank beef ribs, burgdoggen beef chicken biltong alcatra flank kevin ball tip doner. Sausage pork belly pork loin sirloin chuck boudin pastrami flank alcatra spare ribs. Corned beef biltong t-bone jowl frankfurter, shoulder turkey ground round rump bresaola landjaeger. Pastrami andouille jowl, ball tip salami biltong corned beef cow pork chop shoulder landjaeger turkey chuck cupim rump. Venison pancetta burgdoggen ribeye.</p>
