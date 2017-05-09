@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="col-md-3 be-sidebar">
 			<p class="sidebar-section"></span>Recruitment</p>
-			<button type="button" class="btn btn-success btn-sm btn-block">I'm Interested!</button>
+			<button type="button" class="btn btn-success btn-sm btn-block"><a class="link" href="recruitment.php">I'm Interested!</a></button>
 			<div class="side-recruitment">
 				<p>We recruit for immediate positions and don't believe in recruiting for a bench. If your application is successful you will see considerable raid time.</p>
 				<table class="recruit-table">
@@ -57,8 +57,8 @@
 				</table>
 			</div>
 			<p class="sidebar-section"></span>Progression</p>
-			<button type="button" class="btn btn-primary btn-sm btn-block">WoWProgress</button>
-			<button type="button" class="btn btn-warning btn-sm btn-block">Warcraft Logs</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block"><a href="https://www.wowprogress.com/guild/us/illidan/Bitter+End" target="_blank">WoWProgress</a></button>
+			<button type="button" class="btn btn-warning btn-sm btn-block"><a href="https://www.warcraftlogs.com/guilds/234108" target="_blank">Warcraft Logs</a></button>
 			<div class="side-progression">
 
 				<button data-toggle="collapse" data-target="#prog-nh" class="prog-nh-btn"><span>The Nighthold</span></button>

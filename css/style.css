@@ -11,6 +11,11 @@ html, body {
 	text-align: center;
 }
 
+button a {
+	color: #e4e4e4 !important;
+	text-decoration: none !important;
+}
+
 .be-head a {
 	color: #e4e4e4 !important;
 	text-decoration: none !important;
@@ -252,7 +257,7 @@ html, body {
 	background: #222;
 	color: #e4e4e4;
 	min-width: 300px;
-	font-size: 0.75rem;
+	font-size: 0.8rem;
 	padding: 10px 25px;
 	border: 2px solid #222;
 	margin-bottom: 22px;
