@@ -22,9 +22,15 @@
 ?>
 		<div class="col-md-9 be-news">
 
+			<p class="news-title">Bitter End Application Form</p>
+
+			<div class="news-content">
+				<p>Filling out 34 questions to join a WoW guild is dumb, so we have 10 simple questions that give us all of the information we need. If your application is accepted we will add you on BattleNet and invite you to discord for a chat!</p>
+			</div>
+
 				<div class="container">
 
-					<form>
+					<form class="app-form" action="thanks.php" method="post">
 
 						<div class="form-group row">
 							<label for="app-name" class=" col-form-label">Name</label>
@@ -44,70 +50,23 @@
 					    <hr>
 
 					     <div class="form-group row">
-							<label for="app-cname" class="col-form-label">Character Name</label>
-								<input type="text" class="form-control" id="app-cname" placeholder="">
-						</div>
-
-					     <div class="form-group row">
 							<label for="app-armory" class="col-form-label">Armory Link</label>
 								<input type="text" class="form-control" id="app-armory" placeholder="">
 						</div>
 
 						<div class="form-group row">
-							<label for="app-ms" class="col-form-label">What is your main spec?</label>
+							<label for="app-ms" class="col-form-label">What's your main spec and points in weapon?</label>
 								<input type="text" class="form-control" id="app-ms" placeholder="">
 						</div>
 
 						<div class="form-group row">
-							<label for="app-os" class="col-form-label">Are your off specs viable? Which is raid ready?</label>
-								<input type="text" class="form-control" id="app-os" placeholder="">
-						</div>
-
-						<div class="form-group row">
-							<label for="app-mswep" class="col-form-label">What level is your main spec weapon?</label>
-								<input type="text" class="form-control" id="app-mswep" placeholder="">
-						</div>
-
-						<div class="form-group row">
-							<label for="app-oswep" class="col-form-label">What level are your off spec weapon?</label>
+							<label for="app-os" class="col-form-label">Do you have a raid ready offspec? Which one? How many points in your weapon?</label>
 								<input type="text" class="form-control" id="app-oswep" placeholder="">
 						</div>
 
 						<div class="form-group row">
-							<label for="app-alts" class="col-form-label">Do you have any raid ready alts? If so tell us about them and link to their armory</label>
-								<input type="text" class="form-control" id="app-alts" placeholder="">
-						</div>
-
-						<div class="form-group row">
-							<label for="app-logs" class="col-form-label">Please provide a link to your main characters logs</label>
+							<label for="app-logs" class="col-form-label">Please provide a link to your logs</label>
 								<input type="text" class="form-control" id="app-logs" placeholder="">
-						</div>
-
-						<div class="form-group row">
-							<label for="app-charinfo" class="col-form-label">Where do you find information on your class/spec?</label>
-								<input type="text" class="form-control" id="app-charinfo" placeholder="">
-						</div>
-
-						<hr>
-
-						<div class="form-group row">
-							<label for="app-exp" class="col-form-label">Please describe your raiding experience across the expansions you've played</label>
-								<textarea rows ="4" type="text" class="form-control" id="app-exp" placeholder=""></textarea>
-						</div>
-
-						<div class="form-group row">
-							<label for="app-favraid" class="col-form-label">What is your favourite raid of all time, and why?</label>
-								<input type="text" class="form-control" id="app-favraid" placeholder="">
-						</div>
-
-						<div class="form-group row">
-							<label for="app-addons" class="col-form-label">What addons do you use for raiding?</label>
-								<input type="text" class="form-control" id="app-addons" placeholder="">
-						</div>
-
-						<div class="form-group row">
-							<label for="app-ui" class="col-form-label">Please take a screenshot of your UI in a raid setting and provide a link</label>
-								<input type="text" class="form-control" id="app-ui" placeholder=""></textarea>
 						</div>
 
 						<hr>
@@ -118,8 +77,17 @@
 						</div>
 
 						<div class="form-group row">
-							<label for="app-internet" class="col-form-label">Please provide a result from a speedtest.net test</label>
-								<input type="text" class="form-control" id="app-internet" placeholder=""></textarea>
+							<label for="app-internet" class="col-form-label">How stable is your internet? Do you regularly have outages? Please be honest</label>
+								<input type="text" class="form-control" id="app-internet" placeholder="">
+						</div>
+
+						<div class="form-group row">
+							<label for="app-ui" class="col-form-label">Please provide a link to a screenshot of your UI in a raid setting, preferably in combat</label>
+								<input type="text" class="form-control" id="app-ui" placeholder="">
+						</div>
+
+						<div class="form-group row app-submit">
+							<button type="submit" class="btn btn-primary btn-block btn-lg">Submit</button>
 						</div>
 
 					</form>
