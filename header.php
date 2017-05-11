@@ -6,6 +6,7 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<script src="https://use.fontawesome.com/15ecff4722.js"></script>
+		<script type="text/javascript" src="//wow.zamimg.com/widgets/power.js"></script><script>var wowhead_tooltips = { "colorlinks": true, "iconizelinks": true, "renamelinks": true }</script>
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	    <link rel="stylesheet" href="css/style.css">
 
