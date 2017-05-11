@@ -4,36 +4,40 @@
 	$dbuser = "";
 	$dbpass = "";
 	$dbname = "";
+	
+	$dbsql = new mysqli("$dbserver", "$dbuser", "$dbpass", "$dbname")
 
-	mysql_connect("$dbserver", "$dbuser", "$dbpass");
+	if ($dbsql->connect_errno) {
+		printf("Connect failed: %s\n", $mysqli->connect_error);
+		exit();
+	}
 
-	mysql_select_db("$dbname");
+	$name			= $dbsql->real_escape_string($_POST['app-name']);
+	$age			= $dbsql->real_escape_string($_POST['app-age']);
+	$btag			= $dbsql->real_escape_string($_POST['app-btag']);
 
-	$name			= $_POST['app-name'];
-	$age			= $_POST['app-age'];
-	$btag			= $_POST['app-btag'];
+	$armory			= $dbsql->real_escape_string($_POST['app-armory']);
+	$mspec			= $dbsql->real_escape_string($_POST['app-ms']);
+	$ospec			= $dbsql->real_escape_string($_POST['app-os']);
+	$loglink		= $dbsql->real_escape_string($_POST['app-logs']);
 
-	$armory			= $_POST['app-armory'];
-	$mspec			= $_POST['app-ms'];
-	$ospec			= $_POST['app-os'];
-	$loglink		= $_POST['app-logs'];
+	$pcspec			= $dbsql->real_escape_string($_POST['app-specs']);
+	$internetspec	= $dbsql->real_escape_string($_POST['app-internet']);
+	$uiss			= $dbsql->real_escape_string($_POST['app-ui']);
 
-	$pcspec			= $_POST['app-specs'];
-	$internetspec	= $_POST['app-internet'];
-	$uiss			= $_POST['app-ui'];
-
-	$submitapp = mysql_query ("
+	$submitapp = $dbsql->query("
 		INSERT INTO beapps 
 		(name, age, btag, armory, mspec, ospec, loglink, pcspec, internetspec, uiss) 
 		VALUES ('$name','$age','$btag','$armory','$mspec','$ospec','$loglink','$pcspec','$internetspec','$uiss')
 		");
 
 	if ($submitapp) {
-		echo "It probably worked?";
-
+		echo "Application successfully submitted.";
 	} else {
-
-		echo "It probably fucked up";
+		printf("Error: %s\n", $dbsql->error);
 	};
+
+	$submitapp->close();
+	$dbsql->close();
 
 ?>
