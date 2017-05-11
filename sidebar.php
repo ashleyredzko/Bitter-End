@@ -7,51 +7,51 @@
 				<p>We recruit for immediate positions and don't believe in recruiting for a bench. If your application is successful you will see considerable raid time.</p>
 				<table class="recruit-table">
 					<tr class="status-dk">
-						<td class="class-dk"><img src="img/class_icons/class-dk.jpg" />Death Knight</td>
+						<td class="class-dk"><img src="img/class_icons/class-dk.jpg" /> Death Knight</td>
 						<td class="rec-need-dk pull-right"></td>
 					</tr>
 					<tr class="status-dh">
-						<td class="class-dh"><img src="img/class_icons/class-dh.jpg" />Demon Hunter</td>
+						<td class="class-dh"><img src="img/class_icons/class-dh.jpg" /> Demon Hunter</td>
 						<td class="rec-need-dh pull-right"></td>
 					</tr>
 					<tr class="status-druid">
-						<td class="class-druid"><img src="img/class_icons/class-druid.jpg" />Druid</td>
+						<td class="class-druid"><img src="img/class_icons/class-druid.jpg" /> Druid</td>
 						<td class="rec-need-druid pull-right"></td>
 					</tr>
 					<tr class="status-hunter">
-						<td class="class-hunter"><img src="img/class_icons/class-hunter.jpg" />Hunter</td>
+						<td class="class-hunter"><img src="img/class_icons/class-hunter.jpg" /> Hunter</td>
 						<td class="rec-need-hunter pull-right">Marks/BM</td>
 					</tr>
 					<tr class="status-mage">
-						<td class="class-mage"><img src="img/class_icons/class-mage.jpg" />Mage</td>
+						<td class="class-mage"><img src="img/class_icons/class-mage.jpg" /> Mage</td>
 						<td class="rec-need-mage pull-right">Frost/Arcane</td>
 					</tr>
 					<tr class="status-monk">
-						<td class="class-monk"><img src="img/class_icons/class-monk.jpg" />Monk</td>
+						<td class="class-monk"><img src="img/class_icons/class-monk.jpg" /> Monk</td>
 						<td class="rec-need-monk pull-right"></td>
 					</tr>
 					<tr class="status-paladin">
-						<td class="class-paladin"><img src="img/class_icons/class-paladin.jpg" />Paladin</td>
+						<td class="class-paladin"><img src="img/class_icons/class-paladin.jpg" /> Paladin</td>
 						<td class="rec-need-paladin pull-right"></td>
 					</tr>
 					<tr class="status-priest">
-						<td class="class-priest"><img src="img/class_icons/class-priest.jpg" />Priest</td>
+						<td class="class-priest"><img src="img/class_icons/class-priest.jpg" /> Priest</td>
 						<td class="rec-need-priest pull-right">Shadow</td>
 					</tr>
 					<tr class="status-rogue">
-						<td class="class-rogue"><img src="img/class_icons/class-rogue.jpg" />Rogue</td>
+						<td class="class-rogue"><img src="img/class_icons/class-rogue.jpg" /> Rogue</td>
 						<td class="rec-need-rogue pull-right"></td>
 					</tr>
 					<tr class="status-shaman">
-						<td class="class-shaman"><img src="img/class_icons/class-shaman.jpg" />Shaman</td>
+						<td class="class-shaman"><img src="img/class_icons/class-shaman.jpg" /> Shaman</td>
 						<td class="rec-need-shaman pull-right"></td>
 					</tr>
 					<tr class="status-warlock">
-						<td class="class-warlock"><img src="img/class_icons/class-warlock.jpg" />Warlock</td>
+						<td class="class-warlock"><img src="img/class_icons/class-warlock.jpg" /> Warlock</td>
 						<td class="rec-need-warlock pull-right">Any</td>
 					</tr>
 					<tr class="status-warrior">
-						<td class="class-warrior"><img src="img/class_icons/class-warrior.jpg" />Warrior</td>
+						<td class="class-warrior"><img src="img/class_icons/class-warrior.jpg" /> Warrior</td>
 						<td class="rec-need-warrior pull-right"></td>
 					</tr>
 				</table>
