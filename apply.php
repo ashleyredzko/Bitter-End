@@ -2,20 +2,9 @@
 	require('header.php');
 ?>
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-12 highlight-panel highlight-img">
-			<div class="highlight-wrap">
-				<div class="highlight-title">
-				Mythic Star Augur Etraeus Dead
-				</div>
-				<div class="highlight-desc">
-				Rumor has it he saw stars...
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+<?php
+	require('highlight.php');
+?>
 
 <?php
 	require('sidebar.php');
@@ -30,7 +19,7 @@
 
 				<div class="container">
 
-					<form class="app-form" action="thanks.php" method="post">
+					<form class="app-form" action="#" method="post">
 
 						<div class="form-group row">
 							<label for="app-name" class=" col-form-label">Name</label>

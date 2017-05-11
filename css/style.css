@@ -289,3 +289,12 @@ button a {
 .app-submit {
 	margin: 3rem 0;
 }
+
+.raid-sched img {
+	margin-right: 4px;
+	background-size: cover;
+}
+
+.raid-sched td {
+	padding-right: 1rem;
+}
