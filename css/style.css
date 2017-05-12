@@ -298,3 +298,16 @@ button a {
 .raid-sched td {
 	padding-right: 1rem;
 }
+
+.set-recruit {
+	font-size: 0.85rem;
+	width: 100%;
+}
+
+.set-recruit input {
+	width: 100%;
+}
+
+.applications {
+	width: 100%;
+}

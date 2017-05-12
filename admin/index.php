@@ -1,0 +1,140 @@
+<?php
+	require('aheader.php');
+?>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<table class="set-recruit">
+						<tr>
+							<th>Class</th>
+							<th>Status</th>
+							<th>Set</th>
+						</tr>
+						<tr>
+							<td class="class-dk-bg">Death Knight</td>
+							<td><input type="text" placeholder=""></td>
+							<td><button>Ok</button></td>
+						</tr>
+						<tr>
+							<td class="class-dh-bg">Demon Hunter</td>
+							<td><input type="text" placeholder=""></td>
+							<td><button>Ok</button></td>
+						</tr>
+						<tr>
+							<td class="class-druid-bg">Druid</td>
+							<td><input type="text" placeholder=""></td>
+							<td><button>Ok</button></td>
+						</tr>
+						<tr>
+							<td class="class-hunter-bg">Hunter</td>
+							<td><input type="text" placeholder=""></td>
+							<td><button>Ok</button></td>
+						</tr>
+						<tr>
+							<td class="class-mage-bg">Mage</td>
+							<td><input type="text" placeholder=""></td>
+							<td><button>Ok</button></td>
+						</tr>
+						<tr>
+							<td class="class-monk-bg">Monk</td>
+							<td><input type="text" placeholder=""></td>
+							<td><button>Ok</button></td>
+						</tr>
+						<tr>
+							<td class="class-paladin-bg">Paladin</td>
+							<td><input type="text" placeholder=""></td>
+							<td><button>Ok</button></td>
+						</tr>
+						<tr>
+							<td class="class-priest-bg">Priest</td>
+							<td><input type="text" placeholder=""></td>
+							<td><button>Ok</button></td>
+						</tr>
+						<tr>
+							<td class="class-rogue-bg">Rogue</td>
+							<td><input type="text" placeholder=""></td>
+							<td><button>Ok</button></td>
+						</tr>
+						<tr>
+							<td class="class-shaman-bg">Shaman</td>
+							<td><input type="text" placeholder=""></td>
+							<td><button>Ok</button></td>
+						</tr>
+						<tr>
+							<td class="class-warlock-bg">Warlock</td>
+							<td><input type="text" placeholder=""></td>
+							<td><button>Ok</button></td>
+						</tr>
+						<tr>
+							<td class="class-warrior-bg">Warrior</td>
+							<td><input type="text" placeholder=""></td>
+							<td><button>Ok</button></td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-md-4">
+					<form class="new-news">
+						<div class="form-group row">
+							<label for="news-title" class="col-form-label">News Title</label>
+								<input type="text" class="form-control" id="news-title" placeholder="">
+						</div>
+						<div class="form-group row">
+							<label for="news-name" class="col-form-label">Your Name?</label>
+								<input type="text" class="form-control" id="news-name" placeholder="">
+						</div>
+						<div class="form-group row">
+							<label for="news-img" class="col-form-label">Image name</label>
+								<input type="text" class="form-control" id="news-img" placeholder="">
+						</div>
+						<div class="form-group row">
+							<label for="news-body" class="col-form-label">News Body</label>
+								<textarea rows="4" type="text" class="form-control" id="news-body" placeholder=""></textarea>
+						</div>
+						<div class="form-group row news-submit">
+							<button type="submit" class="btn btn-primary btn-block btn-sm">Submit</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group row">
+						<label for="select-raid" class="col-form-label">Select Raid</label>
+							<select class="form-control" id="select-raid">
+								<!-- <option value="raid-tos">Tomb of Sargeras</option> -->
+								<option value="raid-nh">Nighthold</option>
+								<option value="raid-tov">Trial of Valor</option>
+								<option value="raid-en">Emerald Nightmare</option>
+							</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<table class="table applications">
+						<tr>
+							<th>App #</th>
+							<th>Date</th>
+							<th>Name</th>
+							<th>Age</th>
+							<th>BTag</th>
+							<th>Armory</th>
+							<th>MS</th>
+							<th>OS</th>
+							<th>Logs</th>
+							<th>PC Specs</th>
+							<th>Speedtest</th>
+							<th>UI</th>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+<?php
+	require('../footer.php');
+?>
