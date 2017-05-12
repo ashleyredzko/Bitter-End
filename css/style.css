@@ -7,8 +7,13 @@ html, body {
 
 .be-head {
 	background: #222;
-	padding: 1rem 1rem;
 	text-align: center;
+	padding: 0;
+	margin-bottom: 5px;
+}
+
+.be-head.be-fixed {
+	margin-bottom: 55px;
 }
 
 button a {
@@ -30,15 +35,16 @@ button a {
 	background-image:url('../img/logo-white-nbg.png');
 	background-size: cover;
 	display: block;
-	margin: auto;
+	margin: 5px auto;
 	width: 8.5rem;
 	height: 8.5rem;
 }
 
 .be-head .navHov {
 	background: #222;
-	padding: 15px 10px;
+	padding: 10px 10px;
 	transition: all 0.2s;
+	min-height: 50px;
 }
 
 .be-head.be-fixed .navHov {
@@ -80,12 +86,14 @@ button a {
 	.be-head .navHov .mainNav {
 		background-color: #333;
 		max-height: 0;
-		-webkit-transition: max-height 1s;
-		transition: max-height 1s;
+		-webkit-transition: max-height 0.6s ease-in-out, visibility 0.3s;
+		transition: max-height 0.6s ease-in-out, visibility 0.3s;
+		visibility: hidden;
 	}
 	
 	.be-head .navHov.toggled .mainNav {
 		max-height: 300px;
+		visibility: visible;
 	}
 }
 
