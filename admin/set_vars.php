@@ -1,9 +1,8 @@
 <?php
-
 	$dbserver = "";
-	$dbuser = "";
-	$dbpass = "";
-	$dbname = "";
+    $dbuser = "";
+    $dbpass = "";
+    $dbname = "";
 
 	$conn = new mysqli("$dbserver", "$dbuser", "$dbpass", "$dbname");
 
@@ -11,26 +10,24 @@
 		die("Connection failed: " . $conn->connect_error);
 	};
 
-	$query_dk 		= "SELECT status FROM be_recruitment WHERE class = 'class_dk' ";
-		$result_dk = $conn->query($query_dk);
-		echo $result_dk->fetch_assoc()["status"];
+	$recruitment_query = "SELECT * FROM be_recruitment WHERE status IS NOT NULL";
+	$recruitment_result = $conn->query($recruitment_query);
+
+	$recruitment = array();
+
+	while ($row = $recruitment_result->fetch_assoc()) {
+		array_push(
+			$recruitment,
+			array(
+				'class' => $row['class'],
+				'status' => $row['status'],
+				'name' => $row['class_name']
+			)
+		);
+	}
 
 	$conn->close();
 
-
-	// Set class recruitment variables
-	$rec_stat_dk 			= $result_dk->fetch_assoc()["status"];
-	$rec_stat_dh 			= "";
-	$rec_stat_druid 		= "";
-	$rec_stat_hunter 		= "";
-	$rec_stat_mage 			= "";
-	$rec_stat_monk 			= "";
-	$rec_stat_paladin 		= "";
-	$rec_stat_priest 		= "";
-	$rec_stat_rogue 		= "";
-	$rec_stat_shaman 		= "";
-	$rec_stat_warlock 		= "";
-	$rec_stat_warrior 		= "";
 	// Set progression variables
 	// 0 = alive, 1 = normal, 2 = heroic, 3 = mythic
 	// ToS

@@ -9,55 +9,20 @@
 			<button type="button" class="btn btn-success btn-sm btn-block"><a class="link" href="recruitment.php">I'm Interested!</a></button>
 			<div class="side-recruitment">
 				<p>We recruit for immediate positions and don't believe in recruiting for a bench. If your application is successful you will see considerable raid time.</p>
+
 				<table class="recruit-table">
-					<tr class="status-dk">
-						<td class="class-dk"><img src="img/class_icons/class-dk.jpg" /> Death Knight</td>
-						<td class="rec-need-dk pull-right"><?php echo $rec_stat_dk ?></td>
-					</tr>
-					<tr class="status-dh">
-						<td class="class-dh"><img src="img/class_icons/class-dh.jpg" /> Demon Hunter</td>
-						<td class="rec-need-dh pull-right"><?php echo $rec_stat_dh ?></td>
-					</tr>
-					<tr class="status-druid">
-						<td class="class-druid"><img src="img/class_icons/class-druid.jpg" /> Druid</td>
-						<td class="rec-need-druid pull-right"><?php echo $rec_stat_druid ?></td>
-					</tr>
-					<tr class="status-hunter">
-						<td class="class-hunter"><img src="img/class_icons/class-hunter.jpg" /> Hunter</td>
-						<td class="rec-need-hunter pull-right"><?php echo $rec_stat_hunter ?></td>
-					</tr>
-					<tr class="status-mage">
-						<td class="class-mage"><img src="img/class_icons/class-mage.jpg" /> Mage</td>
-						<td class="rec-need-mage pull-right"><?php echo $rec_stat_mage ?></td>
-					</tr>
-					<tr class="status-monk">
-						<td class="class-monk"><img src="img/class_icons/class-monk.jpg" /> Monk</td>
-						<td class="rec-need-monk pull-right"><?php echo $rec_stat_monk ?></td>
-					</tr>
-					<tr class="status-paladin">
-						<td class="class-paladin"><img src="img/class_icons/class-paladin.jpg" /> Paladin</td>
-						<td class="rec-need-paladin pull-right"><?php echo $rec_stat_paladin ?></td>
-					</tr>
-					<tr class="status-priest">
-						<td class="class-priest"><img src="img/class_icons/class-priest.jpg" /> Priest</td>
-						<td class="rec-need-priest pull-right"><?php echo $rec_stat_priest ?></td>
-					</tr>
-					<tr class="status-rogue">
-						<td class="class-rogue"><img src="img/class_icons/class-rogue.jpg" /> Rogue</td>
-						<td class="rec-need-rogue pull-right"><?php echo $rec_stat_rogue ?></td>
-					</tr>
-					<tr class="status-shaman">
-						<td class="class-shaman"><img src="img/class_icons/class-shaman.jpg" /> Shaman</td>
-						<td class="rec-need-shaman pull-right"><?php echo $rec_stat_shaman ?></td>
-					</tr>
-					<tr class="status-warlock">
-						<td class="class-warlock"><img src="img/class_icons/class-warlock.jpg" /> Warlock</td>
-						<td class="rec-need-warlock pull-right"><?php echo $rec_stat_warlock ?></td>
-					</tr>
-					<tr class="status-warrior">
-						<td class="class-warrior"><img src="img/class_icons/class-warrior.jpg" /> Warrior</td>
-						<td class="rec-need-warrior pull-right"><?php echo $rec_stat_warrior ?></td>
-					</tr>
+					<?php 
+						foreach ($recruitment as $classStatus) {
+							$class = $classStatus['class'];
+							$status = $classStatus['status'];
+							$name = $classStatus['name'];
+
+							echo "<tr class=\"status-$class\">";
+							echo "<td class=\"class-$class\"><img src=\"img/class_icons/class-$class.jpg\" /> $name</td>";
+							echo "<td class=\"rec-need-$class pull-right\">$status</td>";
+							echo "</tr>";
+						}
+					?>
 				</table>
 			</div>
 			<p class="sidebar-section"></span>Progression</p>
