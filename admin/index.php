@@ -2,9 +2,14 @@
 	require('aheader.php');
 ?>
 
+<?php
+	require('set_vars.php');
+?>
+
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
+					<p class="news-title text-center">Set Recruitment Status</p>
 					<table class="set-recruit">
 						<tr>
 							<th>Class</th>
@@ -13,67 +18,68 @@
 						</tr>
 						<tr>
 							<td class="class-dk-bg">Death Knight</td>
-							<td><input type="text" placeholder=""></td>
+							<td><input type="text" placeholder="<?php echo $rec_stat_dk ?>"></td>
 							<td><button>Ok</button></td>
 						</tr>
 						<tr>
 							<td class="class-dh-bg">Demon Hunter</td>
-							<td><input type="text" placeholder=""></td>
+							<td><input type="text" placeholder="<?php echo $rec_stat_dh ?>"></td>
 							<td><button>Ok</button></td>
 						</tr>
 						<tr>
 							<td class="class-druid-bg">Druid</td>
-							<td><input type="text" placeholder=""></td>
+							<td><input type="text" placeholder="<?php echo $rec_stat_druid ?>"></td>
 							<td><button>Ok</button></td>
 						</tr>
 						<tr>
 							<td class="class-hunter-bg">Hunter</td>
-							<td><input type="text" placeholder=""></td>
+							<td><input type="text" placeholder="<?php echo $rec_stat_hunter ?>"></td>
 							<td><button>Ok</button></td>
 						</tr>
 						<tr>
 							<td class="class-mage-bg">Mage</td>
-							<td><input type="text" placeholder=""></td>
+							<td><input type="text" placeholder="<?php echo $rec_stat_mage ?>"></td>
 							<td><button>Ok</button></td>
 						</tr>
 						<tr>
 							<td class="class-monk-bg">Monk</td>
-							<td><input type="text" placeholder=""></td>
+							<td><input type="text" placeholder="<?php echo $rec_stat_monk ?>"></td>
 							<td><button>Ok</button></td>
 						</tr>
 						<tr>
 							<td class="class-paladin-bg">Paladin</td>
-							<td><input type="text" placeholder=""></td>
+							<td><input type="text" placeholder="<?php echo $rec_stat_paladin ?>"></td>
 							<td><button>Ok</button></td>
 						</tr>
 						<tr>
 							<td class="class-priest-bg">Priest</td>
-							<td><input type="text" placeholder=""></td>
+							<td><input type="text" placeholder="<?php echo $rec_stat_priest ?>"></td>
 							<td><button>Ok</button></td>
 						</tr>
 						<tr>
 							<td class="class-rogue-bg">Rogue</td>
-							<td><input type="text" placeholder=""></td>
+							<td><input type="text" placeholder="<?php echo $rec_stat_rogue ?>"></td>
 							<td><button>Ok</button></td>
 						</tr>
 						<tr>
 							<td class="class-shaman-bg">Shaman</td>
-							<td><input type="text" placeholder=""></td>
+							<td><input type="text" placeholder="<?php echo $rec_stat_shaman ?>"></td>
 							<td><button>Ok</button></td>
 						</tr>
 						<tr>
 							<td class="class-warlock-bg">Warlock</td>
-							<td><input type="text" placeholder=""></td>
+							<td><input type="text" placeholder="<?php echo $rec_stat_warlock ?>"></td>
 							<td><button>Ok</button></td>
 						</tr>
 						<tr>
 							<td class="class-warrior-bg">Warrior</td>
-							<td><input type="text" placeholder=""></td>
+							<td><input type="text" placeholder="<?php echo $rec_stat_warrior ?>"></td>
 							<td><button>Ok</button></td>
 						</tr>
 					</table>
 				</div>
 				<div class="col-md-4">
+					<p class="news-title text-center">Post News</p>
 					<form class="new-news">
 						<div class="form-group row">
 							<label for="news-title" class="col-form-label">News Title</label>
@@ -97,6 +103,7 @@
 					</form>
 				</div>
 				<div class="col-md-4">
+					<p class="news-title text-center">Update Progression</p>
 					<div class="form-group row">
 						<label for="select-raid" class="col-form-label">Select Raid</label>
 							<select class="form-control" id="select-raid">
@@ -111,6 +118,7 @@
 
 			<div class="row">
 				<div class="col-md-12">
+					<p class="news-title text-center">Applications</p>
 					<table class="table applications">
 						<tr>
 							<th>App #</th>
