@@ -13,7 +13,7 @@
 
 				<div class="container">
 
-					<form class="app-form" action="#" method="post">
+					<form class="app-form" action="thanks.php" method="post">
 
 						<div class="form-group row">
 							<label for="app-name" class=" col-form-label">Name</label>

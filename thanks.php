@@ -1,38 +1,37 @@
 <?php 
 	require('admin/functions.php');
-	$dbsql = new mysqli("$dbserver", "$dbuser", "$dbpass", "$dbname")
+	$conn = new mysqli("$dbserver", "$dbuser", "$dbpass", "$dbname");
 
-	if ($dbsql->connect_errno) {
-		printf("Connect failed: %s\n", $mysqli->connect_error);
-		exit();
-	}
+	if ($conn->connect_error) {
+		die("Connection failed: " . $conn->connect_error);
+	};
 
-	$name			= $dbsql->real_escape_string($_POST['app-name']);
-	$age			= $dbsql->real_escape_string($_POST['app-age']);
-	$btag			= $dbsql->real_escape_string($_POST['app-btag']);
+	$name			= $conn->real_escape_string($_POST['app-name']);
+	$age			= $conn->real_escape_string($_POST['app-age']);
+	$btag			= $conn->real_escape_string($_POST['app-btag']);
 
-	$armory			= $dbsql->real_escape_string($_POST['app-armory']);
-	$mspec			= $dbsql->real_escape_string($_POST['app-ms']);
-	$ospec			= $dbsql->real_escape_string($_POST['app-os']);
-	$loglink		= $dbsql->real_escape_string($_POST['app-logs']);
+	$armory			= $conn->real_escape_string($_POST['app-armory']);
+	$mspec			= $conn->real_escape_string($_POST['app-ms']);
+	$ospec			= $conn->real_escape_string($_POST['app-os']);
+	$loglink		= $conn->real_escape_string($_POST['app-logs']);
 
-	$pcspec			= $dbsql->real_escape_string($_POST['app-specs']);
-	$internetspec	= $dbsql->real_escape_string($_POST['app-internet']);
-	$uiss			= $dbsql->real_escape_string($_POST['app-ui']);
+	$pcspec			= $conn->real_escape_string($_POST['app-specs']);
+	$internetspec	= $conn->real_escape_string($_POST['app-internet']);
+	$uiss			= $conn->real_escape_string($_POST['app-ui']);
 
-	$submitapp = $dbsql->query("
-		INSERT INTO beapps 
-		(name, age, btag, armory, mspec, ospec, loglink, pcspec, internetspec, uiss) 
+	$submitapp = $conn->query("
+		INSERT INTO be_applications 
+		(name, age, btag, armory, ms, os, logs, pcspecs, speed, ui) 
 		VALUES ('$name','$age','$btag','$armory','$mspec','$ospec','$loglink','$pcspec','$internetspec','$uiss')
 		");
 
 	if ($submitapp) {
 		echo "Application successfully submitted.";
 	} else {
-		printf("Error: %s\n", $dbsql->error);
+		printf("Error: %s\n", $conn->error);
 	};
 
 	$submitapp->close();
-	$dbsql->close();
+	$conn->close();
 
 ?>
