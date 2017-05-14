@@ -26,6 +26,23 @@
 		);
 	}
 
+	$news_query = "SELECT * FROM be_news ORDER BY id DESC LIMIT 6";
+	$news_result = $conn->query($news_query);
+
+	$news = array();
+
+	while ($row = $news_result->fetch_assoc()) {
+		array_push(
+			$news,
+			array(
+				'title' => $row['title'],
+				'author' => $row['author'],
+				'time' => $row['time'],
+				'body' => $row['body']
+			)
+		);
+	}
+
 	$conn->close();
 
 	// Set progression variables
