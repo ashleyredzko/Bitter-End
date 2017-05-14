@@ -88,15 +88,11 @@
 								<input type="text" class="form-control" id="news-name" placeholder="">
 						</div>
 						<div class="form-group row">
-							<label for="news-img" class="col-form-label">Image name</label>
-								<input type="text" class="form-control" id="news-img" placeholder="">
-						</div>
-						<div class="form-group row">
 							<label for="news-body" class="col-form-label">News Body</label>
 								<textarea rows="4" type="text" class="form-control" id="news-body" placeholder=""></textarea>
 						</div>
 						<div class="form-group row news-submit">
-							<button type="submit" class="btn btn-primary btn-block btn-sm">Submit</button>
+							<button type="submit" class="btn btn-primary btn-block btn-sm">Post news!</button>
 						</div>
 					</form>
 				</div>
@@ -117,24 +113,46 @@
 		<div class="container-flex"
 			<div class="row">
 				<div class="col-md-12">
-					<p class="news-title text-center">Applications</p>
-					<!-- <table class="table applications">
-						<tr>
-							<th>#</th>
-							<th>Date</th>
-							<th>Name</th>
-							<th>Age</th>
-							<th>BTag</th>
-							<th>Armory</th>
-							<th>MS</th>
-							<th>OS</th>
-							<th>Logs</th>
-							<th>PC Specs</th>
-							<th>Speedtest</th>
-							<th>UI</th>
-						</tr>
-					</table> -->
+					<p class="news-title text-center">Contact Centre</p>
+					<?php
+						$conn = new mysqli("$dbserver", "$dbuser", "$dbpass", "$dbname");
 
+						if ($conn->connect_error) {
+							die("Connection failed: " . $conn->connect_error);
+						};
+
+						$result = mysqli_query($conn,"SELECT * FROM be_contact ORDER BY id DESC");
+
+						echo "<table class='table applications'>
+						<tr>
+						<th>#</th>
+						<th>Date</th>
+						<th>Name</th>
+						<th>Reply To</th>
+						<th>Regarding</th>
+						<th>Message</th>
+						</tr>";
+
+						while($row = mysqli_fetch_array($result))
+						{
+						echo "<tr>";
+						echo "<td>" . $row['id'] . "</td>";
+						echo "<td>" . $row['date'] . "</td>";
+						echo "<td>" . $row['name'] . "</td>";
+						echo "<td>" . $row['email'] . "</td>";
+						echo "<td>" . $row['about'] . "</td>";
+						echo "<td>" . $row['msg'] . "</td>";
+						echo "</tr>";
+						}
+						echo "</table>";
+					?>
+
+				</div>
+			</div>
+		<div class="container-flex"
+			<div class="row">
+				<div class="col-md-12">
+					<p class="news-title text-center">Applications</p>
 					<?php
 						$conn = new mysqli("$dbserver", "$dbuser", "$dbpass", "$dbname");
 
@@ -168,13 +186,13 @@
 						echo "<td>" . $row['name'] . "</td>";
 						echo "<td>" . $row['age'] . "</td>";
 						echo "<td>" . $row['btag'] . "</td>";
-						echo "<td><a href='" . $row['armory'] . "'>x</a></td>";
+						echo "<td><a href='" . $row['armory'] . "'><i class='fa fa-external-link' aria-hidden='true'></i></a></td>";
 						echo "<td>" . $row['ms'] . "</td>";
 						echo "<td>" . $row['os'] . "</td>";
-						echo "<td><a href='" . $row['logs'] . "'>x</a></td>";
+						echo "<td><a href='" . $row['logs'] . "'><i class='fa fa-external-link' aria-hidden='true'></i></a></td>";
 						echo "<td>" . $row['pcspecs'] . "</td>";
-						echo "<td><a href='" . $row['speed'] . "'>x</a></td>";
-						echo "<td><a href='" . $row['ui'] . "'>x</a></td>";
+						echo "<td><a href='" . $row['speed'] . "'><i class='fa fa-external-link' aria-hidden='true'></i></a></td>";
+						echo "<td><a href='" . $row['ui'] . "'><i class='fa fa-external-link' aria-hidden='true'></i></a></td>";
 						echo "</tr>";
 						}
 						echo "</table>";
