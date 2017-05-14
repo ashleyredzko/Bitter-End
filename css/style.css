@@ -312,3 +312,8 @@ button a {
 	width: 100%;
 	font-size: 0.75rem;
 }
+
+footer {
+	background: #222;
+	margin-top: 2rem;
+	color: #e4e4e4;

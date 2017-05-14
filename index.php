@@ -13,7 +13,7 @@
 
 					echo "<p class=\"news-title\">$title</p>";
 					echo "<p class=\"news-author-info\">Posted by: <span class=\"news-author\">$author</span> <span class=\"news-date\"><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> $time</span></p>";
-					echo "<div class=\"news-content\"><p>$body</p></div>";
+					echo "<div class=\"news-content\">$body</div>";
 				}
 			?>
 		</div>

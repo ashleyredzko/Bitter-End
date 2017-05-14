@@ -78,18 +78,18 @@
 				</div>
 				<div class="col-md-4">
 					<p class="news-title text-center">Post News</p>
-					<form class="new-news">
+					<form class="new-news" action="submit-news.php" method="post">
 						<div class="form-group row">
 							<label for="news-title" class="col-form-label">News Title</label>
-								<input type="text" class="form-control" id="news-title" placeholder="">
+								<input type="text" name="news-title" class="form-control" id="news-title" placeholder="">
 						</div>
 						<div class="form-group row">
 							<label for="news-name" class="col-form-label">Your Name?</label>
-								<input type="text" class="form-control" id="news-name" placeholder="">
+								<input type="text" name="news-name" class="form-control" id="news-name" placeholder="">
 						</div>
 						<div class="form-group row">
 							<label for="news-body" class="col-form-label">News Body</label>
-								<textarea rows="4" type="text" class="form-control" id="news-body" placeholder=""></textarea>
+								<textarea rows="4" type="text" name="news-body" class="form-control" id="news-body" placeholder="Use HTML code. Wrap paragraphs in <p></p> tags."></textarea>
 						</div>
 						<div class="form-group row news-submit">
 							<button type="submit" class="btn btn-primary btn-block btn-sm">Post news!</button>
@@ -113,7 +113,7 @@
 		<div class="container-flex"
 			<div class="row">
 				<div class="col-md-12">
-					<p class="news-title text-center">Contact Centre</p>
+					<p class="news-title text-center">Contact Centre (newest first)</p>
 					<?php
 						$conn = new mysqli("$dbserver", "$dbuser", "$dbpass", "$dbname");
 
@@ -152,7 +152,7 @@
 		<div class="container-flex"
 			<div class="row">
 				<div class="col-md-12">
-					<p class="news-title text-center">Applications</p>
+					<p class="news-title text-center">Applications (newest first)</p>
 					<?php
 						$conn = new mysqli("$dbserver", "$dbuser", "$dbpass", "$dbname");
 
