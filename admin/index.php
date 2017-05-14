@@ -16,62 +16,62 @@
 						</tr>
 						<tr>
 							<td class="class-dk-bg">Death Knight</td>
-							<td><input type="text" placeholder="<?php echo $rec_stat_dk ?>"></td>
+							<td><input type="text" value="<?php echo $rec_stat_dk ?>" /></td>
 							<td><button>Ok</button></td>
 						</tr>
 						<tr>
 							<td class="class-dh-bg">Demon Hunter</td>
-							<td><input type="text" placeholder="<?php echo $rec_stat_dh ?>"></td>
+							<td><input type="text" value="<?php echo $rec_stat_dh ?>" /></td>
 							<td><button>Ok</button></td>
 						</tr>
 						<tr>
 							<td class="class-druid-bg">Druid</td>
-							<td><input type="text" placeholder="<?php echo $rec_stat_druid ?>"></td>
+							<td><input type="text" value="<?php echo $rec_stat_druid ?>" /></td>
 							<td><button>Ok</button></td>
 						</tr>
 						<tr>
 							<td class="class-hunter-bg">Hunter</td>
-							<td><input type="text" placeholder="<?php echo $rec_stat_hunter ?>"></td>
+							<td><input type="text" value="<?php echo $rec_stat_hunter ?>" /></td>
 							<td><button>Ok</button></td>
 						</tr>
 						<tr>
 							<td class="class-mage-bg">Mage</td>
-							<td><input type="text" placeholder="<?php echo $rec_stat_mage ?>"></td>
+							<td><input type="text" value="<?php echo $rec_stat_mage ?>" /></td>
 							<td><button>Ok</button></td>
 						</tr>
 						<tr>
 							<td class="class-monk-bg">Monk</td>
-							<td><input type="text" placeholder="<?php echo $rec_stat_monk ?>"></td>
+							<td><input type="text" value="<?php echo $rec_stat_monk ?>" /></td>
 							<td><button>Ok</button></td>
 						</tr>
 						<tr>
 							<td class="class-paladin-bg">Paladin</td>
-							<td><input type="text" placeholder="<?php echo $rec_stat_paladin ?>"></td>
+							<td><input type="text" value="<?php echo $rec_stat_paladin ?>" /></td>
 							<td><button>Ok</button></td>
 						</tr>
 						<tr>
 							<td class="class-priest-bg">Priest</td>
-							<td><input type="text" placeholder="<?php echo $rec_stat_priest ?>"></td>
+							<td><input type="text" value="<?php echo $rec_stat_priest ?>" /></td>
 							<td><button>Ok</button></td>
 						</tr>
 						<tr>
 							<td class="class-rogue-bg">Rogue</td>
-							<td><input type="text" placeholder="<?php echo $rec_stat_rogue ?>"></td>
+							<td><input type="text" value="<?php echo $rec_stat_rogue ?>" /></td>
 							<td><button>Ok</button></td>
 						</tr>
 						<tr>
 							<td class="class-shaman-bg">Shaman</td>
-							<td><input type="text" placeholder="<?php echo $rec_stat_shaman ?>"></td>
+							<td><input type="text" value="<?php echo $rec_stat_shaman ?>" /></td>
 							<td><button>Ok</button></td>
 						</tr>
 						<tr>
 							<td class="class-warlock-bg">Warlock</td>
-							<td><input type="text" placeholder="<?php echo $rec_stat_warlock ?>"></td>
+							<td><input type="text" value="<?php echo $rec_stat_warlock ?>" /></td>
 							<td><button>Ok</button></td>
 						</tr>
 						<tr>
 							<td class="class-warrior-bg">Warrior</td>
-							<td><input type="text" placeholder="<?php echo $rec_stat_warrior ?>"></td>
+							<td><input type="text" value="<?php echo $rec_stat_warrior ?>" /></td>
 							<td><button>Ok</button></td>
 						</tr>
 					</table>
@@ -145,11 +145,13 @@
 						echo "</tr>";
 						}
 						echo "</table>";
+
+						$conn->close()
 					?>
 
 				</div>
 			</div>
-		<div class="container-flex"
+		<div class="container-flex">
 			<div class="row">
 				<div class="col-md-12">
 					<p class="news-title text-center">Applications (newest first)</p>
@@ -160,7 +162,7 @@
 							die("Connection failed: " . $conn->connect_error);
 						};
 
-						$result = mysqli_query($conn,"SELECT * FROM be_applications ORDER BY id DESC");
+						$result = $conn->query("SELECT * FROM be_applications ORDER BY id DESC");
 
 						echo "<table class='table applications'>
 						<tr>
@@ -178,7 +180,7 @@
 						<th>UI</th>
 						</tr>";
 
-						while($row = mysqli_fetch_array($result))
+						while($row = $result->fetch_array())
 						{
 						echo "<tr>";
 						echo "<td>" . $row['id'] . "</td>";
@@ -197,7 +199,7 @@
 						}
 						echo "</table>";
 
-						mysqli_close($conn);
+						$conn->close()
 					?>
 
 				</div>
