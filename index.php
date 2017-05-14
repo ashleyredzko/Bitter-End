@@ -1,12 +1,6 @@
 <?php
 	require('header.php');
-?>
-
-<?php
 	require('highlight.php');
-?>
-
-<?php
 	require('sidebar.php');
 ?>
 		<div class="col-md-9 be-news">

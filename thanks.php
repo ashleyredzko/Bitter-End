@@ -1,10 +1,5 @@
 <?php 
-
-	$dbserver = "";
-	$dbuser = "";
-	$dbpass = "";
-	$dbname = "";
-	
+	require('admin/functions.php');
 	$dbsql = new mysqli("$dbserver", "$dbuser", "$dbpass", "$dbname")
 
 	if ($dbsql->connect_errno) {

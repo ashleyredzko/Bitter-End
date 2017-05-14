@@ -1,8 +1,6 @@
 <?php
-	$dbserver = "";
-    $dbuser = "";
-    $dbpass = "";
-    $dbname = "";
+
+	require('functions.php');
 
 	$conn = new mysqli("$dbserver", "$dbuser", "$dbpass", "$dbname");
 

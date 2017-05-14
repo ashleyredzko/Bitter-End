@@ -1,9 +1,7 @@
 <?php
 	require('aheader.php');
-?>
-
-<?php
 	require('set_vars.php');
+	require('functions.php');
 ?>
 
 		<div class="container">
@@ -138,11 +136,6 @@
 					</table> -->
 
 					<?php
-						$dbserver = "";
-					    $dbuser = "";
-					    $dbpass = "";
-					    $dbname = "";
-
 						$conn = new mysqli("$dbserver", "$dbuser", "$dbpass", "$dbname");
 
 						if ($conn->connect_error) {
