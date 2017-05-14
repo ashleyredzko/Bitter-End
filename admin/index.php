@@ -115,13 +115,14 @@
 					</div>
 				</div>
 			</div>
-
+		</div>
+		<div class="container-flex"
 			<div class="row">
 				<div class="col-md-12">
 					<p class="news-title text-center">Applications</p>
-					<table class="table applications">
+					<!-- <table class="table applications">
 						<tr>
-							<th>App #</th>
+							<th>#</th>
 							<th>Date</th>
 							<th>Name</th>
 							<th>Age</th>
@@ -134,7 +135,60 @@
 							<th>Speedtest</th>
 							<th>UI</th>
 						</tr>
-					</table>
+					</table> -->
+
+					<?php
+						$dbserver = "";
+					    $dbuser = "";
+					    $dbpass = "";
+					    $dbname = "";
+
+						$conn = new mysqli("$dbserver", "$dbuser", "$dbpass", "$dbname");
+
+						if ($conn->connect_error) {
+							die("Connection failed: " . $conn->connect_error);
+						};
+
+						$result = mysqli_query($conn,"SELECT * FROM be_applications ORDER BY id DESC");
+
+						echo "<table class='table applications'>
+						<tr>
+						<th>#</th>
+						<th>Date</th>
+						<th>Name</th>
+						<th>Age</th>
+						<th>BTag</th>
+						<th>Armory</th>
+						<th>MS</th>
+						<th>OS</th>
+						<th>Logs</th>
+						<th>PC Specs</th>
+						<th>Speedtest</th>
+						<th>UI</th>
+						</tr>";
+
+						while($row = mysqli_fetch_array($result))
+						{
+						echo "<tr>";
+						echo "<td>" . $row['id'] . "</td>";
+						echo "<td>" . $row['date'] . "</td>";
+						echo "<td>" . $row['name'] . "</td>";
+						echo "<td>" . $row['age'] . "</td>";
+						echo "<td>" . $row['btag'] . "</td>";
+						echo "<td><a href='" . $row['armory'] . "'>x</a></td>";
+						echo "<td>" . $row['ms'] . "</td>";
+						echo "<td>" . $row['os'] . "</td>";
+						echo "<td><a href='" . $row['logs'] . "'>x</a></td>";
+						echo "<td>" . $row['pcspecs'] . "</td>";
+						echo "<td><a href='" . $row['speed'] . "'>x</a></td>";
+						echo "<td><a href='" . $row['ui'] . "'>x</a></td>";
+						echo "</tr>";
+						}
+						echo "</table>";
+
+						mysqli_close($conn);
+					?>
+
 				</div>
 			</div>
 
