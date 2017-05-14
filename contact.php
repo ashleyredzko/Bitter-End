@@ -1,12 +1,6 @@
 <?php
 	require('header.php');
-?>
-
-<?php
 	require('highlight.php');
-?>
-
-<?php
 	require('sidebar.php');
 ?>
 		<div class="col-md-9 be-news">
@@ -63,17 +57,17 @@
 
 						<div class="form-group row">
 							<label for="ct-name" class="col-form-label">Your name</label>
-								<input type="text" class="form-control" id="ct-name" placeholder="">
+								<input type="text" name="ct-name" class="form-control" id="ct-name" placeholder="">
 						</div>
 
 						<div class="form-group row">
 							<label for="ct-btagemail" class="col-form-label">Method of contact (BTag, Email)</label>
-								<input type="text" class="form-control" id="ct-btagemail" placeholder="">
+								<input type="text" name="ct-btagemail" class="form-control" id="ct-btagemail" placeholder="">
 						</div>
 
 						<div class="form-group row">
 							<label for="ct-about" class="col-form-label">What are you contacting us about?</label>
-								<select class="form-control" id="ct-about">
+								<select name="ct-about" class="form-control" id="ct-about">
 									<option value="general">General Query</option>
 									<option value="recruit">Recruitment</option>
 									<option value="sales">Sales</option>
@@ -83,7 +77,7 @@
 
 						<div class="form-group row">
 							<label for="ct-msg" class="col-form-label">Your message</label>
-								<textarea rows="4" type="text" class="form-control" id="ct-msg" placeholder=""></textarea>
+								<textarea rows="4" type="text" name="ct-msg" class="form-control" id="ct-msg" placeholder=""></textarea>
 						</div>
 
 						<div class="form-group row app-submit">

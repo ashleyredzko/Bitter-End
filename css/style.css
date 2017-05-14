@@ -191,6 +191,7 @@ button a {
 .news-content {
 	margin-top: 15px;
 	color: #222;
+	margin-bottom: 1.2rem;
 }
 
 .side-recruitment {
@@ -319,4 +320,40 @@ button a {
 
 .raid-sched td {
 	padding-right: 1rem;
+}
+
+.set-recruit {
+	font-size: 0.85rem;
+	width: 100%;
+}
+
+.set-recruit input {
+	width: 100%;
+}
+
+.applications {
+	width: 100%;
+	font-size: 0.75rem;
+}
+
+footer {
+	background: #222;
+	color: #e2e2e2;
+	margin-bottom: -16px;
+	padding: 2rem 1rem 0 1rem;
+}
+
+footer ul {
+	list-style-type: none;
+	padding: 0;
+	font-size: 0.75rem;
+}
+
+footer .panel {
+	margin-top: 0.75rem;
+}
+
+footer a {
+	color: #e4e4e4 !important;
+	text-decoration: none !important;
 }
