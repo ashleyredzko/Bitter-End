@@ -14,3 +14,11 @@ $('tr:has("td:empty")').hide();
 $('td:contains("Mythic")').addClass('kill-mythic');
 $('td:contains("Heroic")').addClass('kill-heroic');
 $('td:contains("Normal")').addClass('kill-normal');
+
+$(window).on('scroll', function (e) {
+    if ($(window).scrollTop() > $('.be-logo').height() + 10) {
+        $('.be-head').addClass('be-fixed');
+    } else {
+        $('.be-head').removeClass('be-fixed');
+    }
+});

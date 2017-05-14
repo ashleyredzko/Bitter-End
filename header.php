@@ -22,7 +22,7 @@
 
 		<!-- Header -->
 		<nav class="navbar be-head">
-			<div class="be-logo"></div>
+			<div class="be-logo">&nbsp;</div>
 			<div class="navHov">
 				<a href="#" class="navMobileToggle hidden-sm-up">MENU <i class='fa fa-caret-down'></i></a>
 				<div class="mainNav">
