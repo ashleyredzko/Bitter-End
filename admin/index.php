@@ -145,13 +145,13 @@
 						echo "<td>" . $row['name'] . "</td>";
 						echo "<td>" . $row['age'] . "</td>";
 						echo "<td>" . $row['btag'] . "</td>";
-						echo "<td><a href='" . $row['armory'] . "'><i class='fa fa-external-link' aria-hidden='true'></i></a></td>";
+						echo "<td><a href='//" . $row['armory'] . "'><i class='fa fa-external-link' aria-hidden='true'></i></a></td>";
 						echo "<td>" . $row['ms'] . "</td>";
 						echo "<td>" . $row['os'] . "</td>";
-						echo "<td><a href='" . $row['logs'] . "'><i class='fa fa-external-link' aria-hidden='true'></i></a></td>";
+						echo "<td><a href='//" . $row['logs'] . "'><i class='fa fa-external-link' aria-hidden='true'></i></a></td>";
 						echo "<td>" . $row['pcspecs'] . "</td>";
-						echo "<td><a href='" . $row['speed'] . "'><i class='fa fa-external-link' aria-hidden='true'></i></a></td>";
-						echo "<td><a href='" . $row['ui'] . "'><i class='fa fa-external-link' aria-hidden='true'></i></a></td>";
+						echo "<td><a href='//" . $row['speed'] . "'><i class='fa fa-external-link' aria-hidden='true'></i></a></td>";
+						echo "<td><a href='//" . $row['ui'] . "'><i class='fa fa-external-link' aria-hidden='true'></i></a></td>";
 						echo "</tr>";
 						}
 						echo "</table>";
