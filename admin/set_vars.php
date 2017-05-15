@@ -8,7 +8,7 @@
 		die("Connection failed: " . $conn->connect_error);
 	};
 
-	$recruitment_query = "SELECT * FROM be_recruitment WHERE status IS NOT NULL";
+	$recruitment_query = "SELECT * FROM be_recruitment";
 	$recruitment_result = $conn->query($recruitment_query);
 
 	$recruitment = array();

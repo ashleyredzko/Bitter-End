@@ -17,10 +17,12 @@
 							$status = $classStatus['status'];
 							$name = $classStatus['name'];
 
-							echo "<tr class=\"status-$class\">";
-							echo "<td class=\"class-$class\"><img src=\"img/class_icons/class-$class.jpg\" /> $name</td>";
-							echo "<td class=\"rec-need-$class pull-right\">$status</td>";
-							echo "</tr>";
+							if ($status != NULL && $status != '') {
+								echo "<tr class=\"status-$class\">";
+								echo "<td class=\"class-$class\"><img src=\"img/class_icons/class-$class.jpg\" /> $name</td>";
+								echo "<td class=\"rec-need-$class pull-right\">$status</td>";
+								echo "</tr>";
+							}
 						}
 					?>
 				</table>
