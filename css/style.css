@@ -1,8 +1,23 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway';
 @import 'wow-styling.css';
 
-html, body {
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
 	font-family: Raleway;
+	margin-bottom: 220px; /* Padding for footer */
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #222;
+	height: 220px;
+	white-space: no-wrap;
 }
 
 .be-head {
@@ -150,6 +165,7 @@ button a {
 .be-sidebar {
 	color: #e4e4e4;
 	min-height: 500px;
+	height: 100%;
 	background-color: #222;
 	padding: 10px;
 	margin: 0;
@@ -157,7 +173,6 @@ button a {
 
 .be-news {
 	padding: 10px;
-	height: 500px;
 }
 
 .sidebar-section {
