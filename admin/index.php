@@ -1,5 +1,5 @@
 <?php
-	require('aheader.php');
+	require('../header.php');
 	require('set_vars.php');
 	require('functions.php');
 ?>
@@ -8,97 +8,54 @@
 			<div class="row">
 				<div class="col-md-4">
 					<p class="news-title text-center">Set Recruitment Status</p>
-					<table class="set-recruit">
-						<tr>
-							<th>Class</th>
-							<th>Status</th>
-							<th>Set</th>
-						</tr>
-						<tr>
-							<td class="class-dk-bg">Death Knight</td>
-							<td><input type="text" value="<?php echo $rec_stat_dk ?>" /></td>
-							<td><button>Ok</button></td>
-						</tr>
-						<tr>
-							<td class="class-dh-bg">Demon Hunter</td>
-							<td><input type="text" value="<?php echo $rec_stat_dh ?>" /></td>
-							<td><button>Ok</button></td>
-						</tr>
-						<tr>
-							<td class="class-druid-bg">Druid</td>
-							<td><input type="text" value="<?php echo $rec_stat_druid ?>" /></td>
-							<td><button>Ok</button></td>
-						</tr>
-						<tr>
-							<td class="class-hunter-bg">Hunter</td>
-							<td><input type="text" value="<?php echo $rec_stat_hunter ?>" /></td>
-							<td><button>Ok</button></td>
-						</tr>
-						<tr>
-							<td class="class-mage-bg">Mage</td>
-							<td><input type="text" value="<?php echo $rec_stat_mage ?>" /></td>
-							<td><button>Ok</button></td>
-						</tr>
-						<tr>
-							<td class="class-monk-bg">Monk</td>
-							<td><input type="text" value="<?php echo $rec_stat_monk ?>" /></td>
-							<td><button>Ok</button></td>
-						</tr>
-						<tr>
-							<td class="class-paladin-bg">Paladin</td>
-							<td><input type="text" value="<?php echo $rec_stat_paladin ?>" /></td>
-							<td><button>Ok</button></td>
-						</tr>
-						<tr>
-							<td class="class-priest-bg">Priest</td>
-							<td><input type="text" value="<?php echo $rec_stat_priest ?>" /></td>
-							<td><button>Ok</button></td>
-						</tr>
-						<tr>
-							<td class="class-rogue-bg">Rogue</td>
-							<td><input type="text" value="<?php echo $rec_stat_rogue ?>" /></td>
-							<td><button>Ok</button></td>
-						</tr>
-						<tr>
-							<td class="class-shaman-bg">Shaman</td>
-							<td><input type="text" value="<?php echo $rec_stat_shaman ?>" /></td>
-							<td><button>Ok</button></td>
-						</tr>
-						<tr>
-							<td class="class-warlock-bg">Warlock</td>
-							<td><input type="text" value="<?php echo $rec_stat_warlock ?>" /></td>
-							<td><button>Ok</button></td>
-						</tr>
-						<tr>
-							<td class="class-warrior-bg">Warrior</td>
-							<td><input type="text" value="<?php echo $rec_stat_warrior ?>" /></td>
-							<td><button>Ok</button></td>
-						</tr>
-					</table>
+					<form action="/admin/update-recruitment.php" method="post">
+						<table class="set-recruit">
+							<tr>
+								<th>Class</th>
+								<th>Status</th>
+								<th></th>
+							</tr>
+							<?php
+								foreach ($recruitment as $classStatus) {
+									$class = $classStatus['class'];
+									$status = $classStatus['status'];
+									$name = $classStatus['name'];
+
+									echo "<tr>";
+									echo "<td class=\"class-$class-bg\">$name</td>";
+									echo "<td><input class=\"form-control\" type=\"text\" name=\"$class-recruitment\" value=\"$status\" /></td>";
+									echo "</tr>";
+								}
+							?>
+							<tr>
+								<td colspan="2"><button class="btn btn-block btn-primary" type="submit">Update Recruitment</button></td>
+							</tr>
+						</table>
+					</form>
 				</div>
 				<div class="col-md-4">
 					<p class="news-title text-center">Post News</p>
 					<form class="new-news" action="submit-news.php" method="post">
-						<div class="form-group row">
+						<div class="form-group">
 							<label for="news-title" class="col-form-label">News Title</label>
 								<input type="text" name="news-title" class="form-control" id="news-title" placeholder="">
 						</div>
-						<div class="form-group row">
+						<div class="form-group">
 							<label for="news-name" class="col-form-label">Your Name?</label>
 								<input type="text" name="news-name" class="form-control" id="news-name" placeholder="">
 						</div>
-						<div class="form-group row">
+						<div class="form-group">
 							<label for="news-body" class="col-form-label">News Body</label>
 								<textarea rows="4" type="text" name="news-body" class="form-control" id="news-body" placeholder="Use HTML code. Wrap paragraphs in <p></p> tags."></textarea>
 						</div>
-						<div class="form-group row news-submit">
+						<div class="form-group news-submit">
 							<button type="submit" class="btn btn-primary btn-block btn-sm">Post news!</button>
 						</div>
 					</form>
 				</div>
 				<div class="col-md-4">
 					<p class="news-title text-center">Update Progression</p>
-					<div class="form-group row">
+					<div class="form-group">
 						<label for="select-raid" class="col-form-label">Select Raid</label>
 							<select class="form-control" id="select-raid">
 								<!-- <option value="raid-tos">Tomb of Sargeras</option> -->
