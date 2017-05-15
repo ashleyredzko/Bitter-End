@@ -11,6 +11,7 @@ $('.navMobileToggle').click(function () {
 $('td:contains("Mythic")').addClass('kill-mythic');
 $('td:contains("Heroic")').addClass('kill-heroic');
 $('td:contains("Normal")').addClass('kill-normal');
+$('td:contains("Alive")').addClass('kill-alive');
 
 $(window).on('scroll', function (e) {
     if ($(window).scrollTop() > $('.be-logo').height() + 10) {
