@@ -4,7 +4,7 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-3 be-sidebar">
+		<div class="col-md-3 flex-last flex-md-first be-sidebar">
 			<p class="sidebar-section"></span>Recruitment</p>
 			<button type="button" class="btn btn-success btn-sm btn-block"><a class="link" href="recruitment.php">I'm Interested!</a></button>
 			<div class="side-recruitment">
