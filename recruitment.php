@@ -59,7 +59,7 @@
 					<li>You possess the initiative to research new raids/encounters, and keep up to date with your class/spec theorycrafting; constantly looking for ways to improve yourself and your play.</li>
 				</ul>
 
-				<p class="news-title">Who to contact if I have questions?</p>
+				<p class="news-title" id="leadership">Who to contact if I have questions?</p>
 
 				<table class="raid-sched">
 					<tr>

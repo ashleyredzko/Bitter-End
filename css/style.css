@@ -57,7 +57,8 @@ button a {
 
 .be-head .navHov {
 	background: #222;
-	padding: 16px 10px;
+	padding: 12px 10px;
+	padding-top: 14px;
 	transition: all 0.2s;
 	min-height: 50px;
 }

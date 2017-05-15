@@ -7,17 +7,17 @@
 					<div class="col-4 col-md-3">
 						<p>Navigation</p>
 						<ul>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">Recruitment</a></li>
-							<li><a href="#">Media</a></li>
-							<li><a href="#">Contact</a></li>
+							<li><a href="/index.php">Home</a></li>
+							<li><a href="/recruitment.php">Recruitment</a></li>
+							<li><a href="/media.php">Media</a></li>
+							<li><a href="/contact.php">Contact</a></li>
 						</ul>
 					</div>
 					<div class="col-4 col-md-3">
 						<p>Links</p>
 						<ul>
-							<li><a href="#">WoWProgress</a></li>
-							<li><a href="#">Warcraft Logs</a></li>
+							<li><a href="https://www.wowprogress.com/guild/us/illidan/Bitter+End" target="_blank">WoWProgress</a></li>
+							<li><a href="https://www.warcraftlogs.com/guilds/234108" target="_blank">Warcraft Logs</a></li>
 							<li><a href="#">YouTube</a></li>
 							<li><a href="#">Twitch</a></li>
 						</ul>
@@ -25,10 +25,10 @@
 					<div class="col-4 col-md-3">
 						<p>Information</p>
 						<ul>
-							<li><a href="#">Sales</a></li>
-							<li><a href="#">Application</a></li>
-							<li><a href="#">Leadership</a></li>
-							<li><a href="#">Admin</a></li>
+							<li><a href="/contact.php">Sales</a></li>
+							<li><a href="/apply.php">Application</a></li>
+							<li><a href="/recruitment.php#leadership">Leadership</a></li>
+							<li><a href="/admin">Admin</a></li>
 						</ul>
 					</div>
 				</div>
