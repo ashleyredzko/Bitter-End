@@ -36,26 +36,26 @@
 				<div class="col-md-4">
 					<p class="news-title text-center">Post News</p>
 					<form class="new-news" action="submit-news.php" method="post">
-						<div class="form-group row">
+						<div class="form-group">
 							<label for="news-title" class="col-form-label">News Title</label>
 								<input type="text" name="news-title" class="form-control" id="news-title" placeholder="">
 						</div>
-						<div class="form-group row">
+						<div class="form-group">
 							<label for="news-name" class="col-form-label">Your Name?</label>
 								<input type="text" name="news-name" class="form-control" id="news-name" placeholder="">
 						</div>
-						<div class="form-group row">
+						<div class="form-group">
 							<label for="news-body" class="col-form-label">News Body</label>
 								<textarea rows="4" type="text" name="news-body" class="form-control" id="news-body" placeholder="Use HTML code. Wrap paragraphs in <p></p> tags."></textarea>
 						</div>
-						<div class="form-group row news-submit">
+						<div class="form-group news-submit">
 							<button type="submit" class="btn btn-primary btn-block btn-sm">Post news!</button>
 						</div>
 					</form>
 				</div>
 				<div class="col-md-4">
 					<p class="news-title text-center">Update Progression</p>
-					<div class="form-group row">
+					<div class="form-group">
 						<label for="select-raid" class="col-form-label">Select Raid</label>
 							<select class="form-control" id="select-raid">
 								<!-- <option value="raid-tos">Tomb of Sargeras</option> -->
