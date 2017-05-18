@@ -5,7 +5,7 @@
 ?>
 		<div class="col-md-9 be-news">
 
-			<p class="news-title">Bitter End Contact</p>
+			<p class="news-title">Bitter End Contact &amp; Sales Information</p>
 
 			<div class="news-content">
 				<p>If you'd like to contact us for any reason you can use the form below. Also listed are the prices and times we run sales.</p>
@@ -16,7 +16,7 @@
 						<li>We require a 25% deposit to confirm your booking. The remainder is paid when the first boss dies.</li>
 						<li>Showing up late or not at all forfeits your deposit.</li>
 						<li>Mythic only: being unable to follow simple instructions and wiping the raid may see you kicked and your deposit forfeit. We will refund you for any missing bosses.</li>
-						<li>We only sell Master Loot runs to 3 characters at a time (one per armor token), and we do not take more than 1 type of armor specialization. This prevents the majority of loot conflicts, however some slots (neck, back, rings and trinkets) will be handed out based on buyers main spec stat priority. We also only take 1 class per main secondary stat so buyers don't fight over crit gear. For example <a href="http://www.wowhead.com/item=140895/spellblades-gemmed-signet&bonus=3514">Spellblade's Gemmed Signet</a> would go to a Fire Mage over a Shadow Priest.</li>
+						<li>We only sell Master Loot runs to 3 characters at a time (one per armor token), and we do not take more than 1 type of armor specialization. This prevents the majority of loot conflicts, however some slots (neck, back, rings and trinkets) will be handed out based on buyers main spec stat priority. We also only take 1 class per main secondary stat so buyers don't fight over secondary stats. For example <a href="http://www.wowhead.com/item=140895/spellblades-gemmed-signet&bonus=3514">Spellblade's Gemmed Signet</a> would go to a Fire Mage over a Shadow Priest.</li>
 					</ul>
 				</p>
 			</div>

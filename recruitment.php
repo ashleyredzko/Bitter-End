@@ -37,14 +37,14 @@
 					</tr>
 				</table>
 
-				<p>Raids typically begin forming 20 minutes before stated time. All raiders are expected to be in raid and at the entrance 10 minutes before hand accompanied by their flasks, food, pots, runes and any other consumables the raid night may call for.</p>
+				<p>Raids typically begin forming 20 minutes before the stated time. All raiders are expected to be in raid and at the entrance 10 minutes before hand accompanied by their flasks, food, pots, runes and any other consumables the raid night may call for.</p>
 
 				<p class="news-title">About us</p>
 
 				<ul>
 					<li>Bitter End is a close knit family of players here to build long lasting friendships. We're very fun, open-hearted and full of banter and are looking for people with similar personalities.</li>
 					<li>While we are very relaxed during normal play, we take raiding fairly seriously and won't accept lazy and sub-optimal play. We're not expecting players to be parsing #1, we simply want people to be prepared, knowledgeable about their class and every encounter, and be open to constructive criticism. We value people who play to benefit the team and not always themselves.</li>
-					<li>The trial period typically lasts 3 weeks, at the end of which you will either pass, fail or be extended by 2 weeks. During this time will you be judged on your attendance, attitude and performance.</li>
+					<li>The trial period typically lasts 3 weeks, at the end of which you will either pass, fail or be extended by 2 weeks. During this time will you be judged on your attendance, attitude and performance. We will typically hit you up at the end of raid on every Thursday and give you feedback on how you are doing and what we'd like you to improve on.</li>
 					<li>We handle loot as a council of experienced players. We base our decisions mainly on the benefit to the raid team, but take into consideration attendance and performance. We do not favor officers over raiders, however we may favor members over trials for a short period of time to prevent people using our guild as a stepping stone to another guild. We seek to recruit long lasting and loyal members and aren't looking for players whose sole concern is obtaining loot.</li>
 					<li>We reward and invest in loyal players. Sticking through the hard times never go unnoticed.</li>
 				</ul>
@@ -53,9 +53,9 @@
 
 				<ul>
 					<li>You have a respectable background of raiding throughout multiple expansions and tiers.</li>
-					<li>You have the mindset of a mythic raider. If wiping on the same boss for 9 hours a week seems daunting to you, perhaps look elsewhere.</li>
-					<li>You're looking for a guild to stay in for a long time, and you're not the type of person to guild hop.</li>
-					<li>You're looking for a mythic raiding team without the added stress angry raid leaders and toxic environments.</li>
+					<li>You have the mindset and stamina of a mythic raider. If wiping on the same boss for 9 hours a week seems daunting to you, perhaps look elsewhere.</li>
+					<li>You're looking for a guild that you can stay in for a long time and become a part of a family.</li>
+					<li>You're looking for a mythic raiding team without the added stress angry of raid leaders and toxic environments.</li>
 					<li>You possess the initiative to research new raids/encounters, and keep up to date with your class/spec theorycrafting; constantly looking for ways to improve yourself and your play.</li>
 				</ul>
 
@@ -91,7 +91,7 @@
 
 				<p class="news-title">Sounds good, now what?</p>
 
-				<button type="button" class="btn btn-success btn-lg btn-block"><a href="/apply.php">Apply!</a></button>
+				<a class="btn btn-success btn-lg btn-block" href="/apply.php">Apply!</a>
 
 			</div>
 		</div>
