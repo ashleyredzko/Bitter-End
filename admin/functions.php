@@ -1,6 +1,6 @@
 <?php 
-	$dbserver = $_ENV["DB_URL"];
-	$dbuser = $_ENV["DB_USER"];
-	$dbpass = $_ENV["DB_PASS"];
-	$dbname = $_ENV["DB_NAME"];
+	$dbserver = getenv('DB_URL');
+	$dbuser = getenv('DB_USER');
+	$dbpass = getenv('DB_PASS');
+	$dbname = getenv('DB_NAME');
 ?>			
