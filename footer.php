@@ -10,7 +10,7 @@
 							<li><a href="/">Home</a></li>
 							<li><a href="/recruitment">Recruitment</a></li>
 							<li><a href="/media">Media</a></li>
-							<li><a href="/bierend/contact">Contact</a></li>
+							<li><a href="/contact">Contact</a></li>
 						</ul>
 					</div>
 					<div class="col-4 col-md-3">
