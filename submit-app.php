@@ -41,6 +41,7 @@
 
 					$conn->close();
 				?>
+				<a href='/bitterend/' class="btn btn-primary">Return to Home</a>
 			</div>
 		</div>
 	</div>

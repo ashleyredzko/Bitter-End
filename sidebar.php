@@ -6,7 +6,7 @@
 	<div class="row">
 		<div class="col-md-3 flex-last flex-md-first be-sidebar">
 			<p class="sidebar-section"></span>Recruitment</p>
-			<button type="button" class="btn btn-success btn-sm btn-block"><a class="link" href="recruitment.php">I'm Interested!</a></button>
+			<button type="button" class="btn btn-success btn-sm btn-block"><a class="link" href="/bitterend/recruitment.php">I'm Interested!</a></button>
 			<div class="side-recruitment">
 				<p>We recruit for immediate positions and don't believe in recruiting for a bench. If your application is successful you will see considerable raid time.</p>
 
@@ -71,7 +71,7 @@
 								</tr>
 								<tr>
 									<td>Grand Magistrix Elisande</td>
-									<td class="pull-right kill-status">Heroic</td>
+									<td class="pull-right kill-status">Mythic</td>
 								</tr>
 								<tr>
 									<td>Gul'dan</td>

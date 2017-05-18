@@ -8,7 +8,7 @@
 			<div class="row">
 				<div class="col-md-4">
 					<p class="news-title text-center">Set Recruitment Status</p>
-					<form action="/admin/update-recruitment.php" method="post">
+					<form action="/bitterend/admin/update-recruitment.php" method="post">
 						<table class="set-recruit">
 							<tr>
 								<th>Class</th>
@@ -35,7 +35,7 @@
 				</div>
 				<div class="col-md-4">
 					<p class="news-title text-center">Post News</p>
-					<form class="new-news" action="submit-news.php" method="post">
+					<form class="new-news" action="/bitterend/admin/submit-news.php" method="post">
 						<div class="form-group">
 							<label for="news-title" class="col-form-label">News Title</label>
 								<input type="text" name="news-title" class="form-control" id="news-title" placeholder="">
@@ -67,7 +67,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="container-flex"
+		<div class="container-flex">
 			<div class="row">
 				<div class="col-md-12">
 					<p class="news-title text-center">Contact Centre (newest first)</p>
