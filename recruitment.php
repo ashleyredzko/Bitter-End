@@ -91,7 +91,7 @@
 
 				<p class="news-title">Sounds good, now what?</p>
 
-				<a class="btn btn-success btn-lg btn-block" href="/apply.php">Apply!</a>
+				<a class="btn btn-success btn-lg btn-block" href="/apply">Apply!</a>
 
 			</div>
 		</div>

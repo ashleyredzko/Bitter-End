@@ -29,10 +29,10 @@
 			<div class="navHov">
 				<a href="#" class="navMobileToggle hidden-sm-up">MENU <i class='fa fa-caret-down'></i></a>
 				<div class="mainNav">
-					<a href="/index.php" >HOME</a>
-					<a href="/recruitment.php" >RECRUITMENT</a>
-					<a href="/media.php" >MEDIA</a>
-					<a href="/contact.php" >CONTACT</a>
+					<a href="/" >HOME</a>
+					<a href="/recruitment" >RECRUITMENT</a>
+					<a href="/media" >MEDIA</a>
+					<a href="/contact" >CONTACT</a>
 				</div>
 			</div>
 		</nav>

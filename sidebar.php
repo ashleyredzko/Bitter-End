@@ -6,7 +6,7 @@
 	<div class="row">
 		<div class="col-md-3 flex-last flex-md-first be-sidebar">
 			<p class="sidebar-section"></span>Recruitment</p>
-			<a class="btn btn-success btn-sm btn-block" href="/recruitment.php">I'm interested!</a>
+			<a class="btn btn-success btn-sm btn-block" href="/recruitment">I'm interested!</a>
 			<div class="side-recruitment">
 				<p>We recruit for immediate positions and don't believe in recruiting for a bench. If your application is successful you will see considerable raid time.</p>
 
@@ -28,8 +28,8 @@
 				</table>
 			</div>
 			<p class="sidebar-section"></span>Progression</p>
-			<button type="button" class="btn btn-primary btn-sm btn-block"><a href="https://www.wowprogress.com/guild/us/illidan/Bitter+End" target="_blank">WoWProgress</a></button>
-			<button type="button" class="btn btn-warning btn-sm btn-block"><a href="https://www.warcraftlogs.com/guilds/234108" target="_blank">Warcraft Logs</a></button>
+			<a class="btn btn-primary btn-sm btn-block" href="https://www.wowprogress.com/guild/us/illidan/Bitter+End" target="_blank">WoWProgress</a>
+			<a class="btn btn-warning btn-sm btn-block" href="https://www.warcraftlogs.com/guilds/234108" target="_blank">Warcraft Logs</a>
 			<div class="side-progression">
 
 				<button data-toggle="collapse" data-target="#prog-nh" class="prog-nh-btn"><span>The Nighthold</span></button>

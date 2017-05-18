@@ -53,7 +53,7 @@
 
 				<div class="container">
 
-					<form class="ct-form" action="/contact-success.php" method="post">
+					<form class="ct-form" action="/contact-success" method="post">
 
 						<div class="form-group row">
 							<label for="ct-name" class="col-form-label">Your name</label>

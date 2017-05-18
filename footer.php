@@ -7,10 +7,10 @@
 					<div class="col-4 col-md-3">
 						<p>Navigation</p>
 						<ul>
-							<li><a href="/index.php">Home</a></li>
-							<li><a href="/recruitment.php">Recruitment</a></li>
-							<li><a href="/media.php">Media</a></li>
-							<li><a href="/bierend/contact.php">Contact</a></li>
+							<li><a href="/">Home</a></li>
+							<li><a href="/recruitment">Recruitment</a></li>
+							<li><a href="/media">Media</a></li>
+							<li><a href="/bierend/contact">Contact</a></li>
 						</ul>
 					</div>
 					<div class="col-4 col-md-3">
@@ -25,9 +25,9 @@
 					<div class="col-4 col-md-3">
 						<p>Information</p>
 						<ul>
-							<li><a href="/contact.php">Sales</a></li>
-							<li><a href="/apply.php">Application</a></li>
-							<li><a href="/recruitment.php#leadership">Leadership</a></li>
+							<li><a href="/contact">Sales</a></li>
+							<li><a href="/apply">Application</a></li>
+							<li><a href="/recruitment#leadership">Leadership</a></li>
 							<li><a href="/admin">Admin</a></li>
 						</ul>
 					</div>
