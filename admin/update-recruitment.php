@@ -55,7 +55,7 @@
 						$conn->close();
 					}
 				?>
-				<a href='/bitterend/admin' class="btn btn-primary">Return to Administration</a>
+				<a href='/admin' class="btn btn-primary">Return to Administration</a>
 			</div>
 		</div>
 	</div>

@@ -33,7 +33,7 @@
 
 					$conn->close();
 				?>
-				<a href='/bitterend/index.php' class="btn btn-primary">Return to Home</a>
+				<a href='/index.php' class="btn btn-primary">Return to Home</a>
 			</div>
 		</div>
 	</div>

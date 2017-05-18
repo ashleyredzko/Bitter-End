@@ -135,8 +135,8 @@ button a {
 	background-size: cover;
 	background-image: url("../img/highlight.jpg");
 	background-repeat: no-repeat;
-	background-position: 0px -110px;
-	filter: hue-rotate(285deg);
+	background-position: 0px -90px;
+	/*filter: hue-rotate(285deg);*/
 
 }
 

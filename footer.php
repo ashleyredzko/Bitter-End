@@ -7,10 +7,10 @@
 					<div class="col-4 col-md-3">
 						<p>Navigation</p>
 						<ul>
-							<li><a href="/bitterend/index.php">Home</a></li>
-							<li><a href="/bitterend/recruitment.php">Recruitment</a></li>
-							<li><a href="/bitterend/media.php">Media</a></li>
-							<li><a href="/bitterend/contact.php">Contact</a></li>
+							<li><a href="/index.php">Home</a></li>
+							<li><a href="/recruitment.php">Recruitment</a></li>
+							<li><a href="/media.php">Media</a></li>
+							<li><a href="/bierend/contact.php">Contact</a></li>
 						</ul>
 					</div>
 					<div class="col-4 col-md-3">
@@ -25,10 +25,10 @@
 					<div class="col-4 col-md-3">
 						<p>Information</p>
 						<ul>
-							<li><a href="/bitterend/contact.php">Sales</a></li>
-							<li><a href="/bitterend/apply.php">Application</a></li>
-							<li><a href="/bitterend/recruitment.php#leadership">Leadership</a></li>
-							<li><a href="/bitterend/admin">Admin</a></li>
+							<li><a href="/contact.php">Sales</a></li>
+							<li><a href="/apply.php">Application</a></li>
+							<li><a href="/recruitment.php#leadership">Leadership</a></li>
+							<li><a href="/admin">Admin</a></li>
 						</ul>
 					</div>
 				</div>
@@ -43,6 +43,6 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-		<script src="/bitterend/js/main.js"></script>
+		<script src="/js/main.js"></script>
 	</body>
 </html>
